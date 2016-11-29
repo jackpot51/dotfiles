@@ -1,0 +1,7 @@
+[user]
+	email = jackpot51@gmail.com
+	name = Jeremy Soller
+[push]
+	default = simple
+[credential]
+	helper = store

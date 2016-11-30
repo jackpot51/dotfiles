@@ -1,0 +1,25 @@
+! Set font
+xterm*faceName: Bitstream Vera Serif Mono
+xterm*faceSize: 10
+
+! Set geometry
+xterm*vt100*geometry: 80x50
+
+! Set scrollback
+xterm*saveLines: 2000
+
+! Set selection logic
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+
+! Set correct terminal type
+xterm*termName: xterm-color
+
+! Set foreground and background
+xterm*background: black
+xterm*foreground: white
+
+! Set bell to off
+xterm*visualBell: false
+
+! Set login shell
+xterm*loginShell: true

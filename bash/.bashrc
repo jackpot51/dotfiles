@@ -116,5 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Turn off bell
+set bell-style none
+
+# VI Mode
 #set -o vi
 #bind 'set show-mode-in-prompt on'

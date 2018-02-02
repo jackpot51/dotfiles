@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ -z "$1" ]
+then
+    echo "$0 [git repository]"
+    exit 1
+fi
+
+git clone --bare --recursive "$1" bare
+git -C bare ls-remote --quiet --heads | cut -d $'\t' -f2 | while read ref
+do
+    branch="$(basename "$ref")"
+    git clone --recursive bare -b "$branch" "$branch"
+    git -C "$branch" remote set-url origin "$1"
+done

@@ -23,4 +23,5 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-export ANDROID_HOME="$HOME/Android/Sdk"
+export DEBEMAIL="jeremy@system76.com"
+export DEBFULLNAME="Jeremy Soller"

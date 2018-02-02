@@ -1,0 +1,16 @@
+#!/bin/bash
+
+case "$1" in
+m*)
+    echo "==Showing manual installs==" >&2
+    comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+    ;;
+a*)
+    echo "==Showing automatic installs==" >&2
+    comm -23 <(apt-mark showauto | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+    ;;
+*)
+    echo "==Showing all installs==" >&2
+    comm -23 <( (apt-mark showmanual && apt-mark showauto) | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+    ;;
+esac

@@ -1,0 +1,9 @@
+if test -e ~/.config/ion/lwd
+    echo "lwd: $(cat ~/.config/ion/lwd)"
+    cd "$(cat ~/.config/ion/lwd)"
+end
+
+fn PROMPT
+    pwd > ~/.config/ion/lwd
+    echo -n "${x::1B}]0;${PWD}${x::07}${c::bold}${c::0x4B}${SWD}${c::default}# ${c::reset}"
+end

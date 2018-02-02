@@ -1,5 +1,5 @@
 ! Set font
-xterm*faceName: Bitstream Vera Serif Mono
+xterm*faceName: DejaVu Sans Mono
 xterm*faceSize: 10
 
 ! Set geometry

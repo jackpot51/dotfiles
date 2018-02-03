@@ -159,3 +159,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# launch nm-applet
+exec --no-startup-id nm-applet

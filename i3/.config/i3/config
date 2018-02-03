@@ -162,3 +162,6 @@ bar {
 
 # launch nm-applet
 exec --no-startup-id nm-applet
+
+# launch volume applet
+exec --no-startup-id pasystray

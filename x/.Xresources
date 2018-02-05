@@ -3,10 +3,10 @@ xterm*faceName: DejaVu Sans Mono
 xterm*faceSize: 10
 
 ! Set geometry
-xterm*vt100*geometry: 80x50
+xterm*vt100*geometry: 80x40
 
 ! Set scrollback
-xterm*saveLines: 2000
+xterm*saveLines: 8192
 
 ! Set selection logic
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
@@ -23,3 +23,8 @@ xterm*visualBell: false
 
 ! Set login shell
 xterm*loginShell: true
+
+! Set key bindings
+xterm*translations: #override \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)

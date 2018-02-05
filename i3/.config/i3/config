@@ -175,6 +175,9 @@ bar {
         tray_output primary
 }
 
+# make QEMU windows float
+for_window [title="^QEMU.*$"] floating enable
+
 # launch nm-applet
 exec --no-startup-id nm-applet
 

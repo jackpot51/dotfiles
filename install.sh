@@ -1,10 +1,10 @@
 #!/bin/bash
 
-set -ex
+set -x
 
 stow bash
 #stow git
 stow i3
 stow ion
 stow scripts
-stow xterm
+stow x

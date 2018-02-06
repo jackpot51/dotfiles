@@ -178,6 +178,9 @@ bar {
 # make QEMU windows float
 for_window [title="^QEMU.*$"] floating enable
 
+# launch notification process
+exec --no-startup-id dunst
+
 # launch nm-applet
 exec --no-startup-id nm-applet
 

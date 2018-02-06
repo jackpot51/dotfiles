@@ -1,2 +1,3 @@
-#!/bin/bash
+#!/bin/sh
+
 dpkg -l |awk '/^rc/ {print $2}' |xargs sudo dpkg --purge --

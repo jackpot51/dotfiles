@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -x
 
@@ -18,4 +18,9 @@ fi
 if [ -e "${HOME}/.fehbg" ]
 then
     "${HOME}/.fehbg"
+fi
+
+if [ -n "$(which compton)" ]
+then
+    compton -b
 fi

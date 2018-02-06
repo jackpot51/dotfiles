@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -x
+set -ex
 
 # Set layout if found
 if [ -e "${HOME}/.screenlayout/${HOSTNAME}.sh" ]
@@ -20,7 +20,7 @@ then
     "${HOME}/.fehbg"
 fi
 
-if [ -n "$(which compton)" ]
+if [ -n "$(which compton)" -a -e "${HOME}/.config/compton.conf" ]
 then
-    compton -b
+    compton --daemon --config "${HOME}/.config/compton.conf"
 fi

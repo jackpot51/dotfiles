@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -x
+set -ex
 
 # Run xinitrc
 if [ -e "${HOME}/.xinitrc" ]

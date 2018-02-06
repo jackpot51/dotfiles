@@ -3,9 +3,9 @@
 set -ex
 
 # Set layout if found
-if [ -e "${HOME}/.screenlayout/${HOSTNAME}.sh" ]
+if [ -e "${HOME}/.screenlayout/$(hostname).sh" ]
 then
-    "${HOME}/.screenlayout/${HOSTNAME}.sh"
+    "${HOME}/.screenlayout/$(hostname).sh"
 fi
 
 # Load keyboard mapping

@@ -22,5 +22,5 @@ fi
 
 if [ -n "$(which compton)" -a -e "${HOME}/.config/compton.conf" ]
 then
-    compton --daemon --config "${HOME}/.config/compton.conf"
+    nohup compton --config "${HOME}/.config/compton.conf" &
 fi

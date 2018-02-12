@@ -1,2 +1,36 @@
+[org/gnome/settings-daemon/plugins/media-keys]
+terminal='<Super>Return'
+www='<Shift><Super>Return'
+screensaver='<Super>BackSpace'
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-right=['<Super>l']
+toggle-tiled-left=['<Super>j']
+
 [org/gnome/desktop/background]
 picture-uri='file:///home/jeremy/.local/share/shotwell/wallpaper/wallpaper.xml'
+
+[org/gnome/desktop/interface]
+gtk-im-module='gtk-im-context-simple'
+toolkit-accessibility=false
+
+[org/gnome/desktop/wm/keybindings]
+move-to-workspace-last=@as []
+toggle-maximized=['<Super>i']
+unmaximize=['<Super>k']
+close=['<Super>q']
+move-to-workspace-up=['<Shift><Super>u']
+move-to-workspace-1=@as []
+switch-to-workspace-left=@as []
+switch-to-workspace-down=['<Super>o']
+move-to-workspace-right=@as []
+cycle-windows=['<Super>Escape']
+cycle-windows-backward=['<Shift><Super>Escape']
+move-to-monitor-left=['<Shift><Super>j']
+switch-to-workspace-right=@as []
+move-to-monitor-down=['<Shift><Super>k']
+move-to-workspace-left=@as []
+move-to-monitor-right=['<Shift><Super>l']
+move-to-workspace-down=['<Shift><Super>o']
+move-to-monitor-up=['<Shift><Super>i']
+switch-to-workspace-up=['<Super>u']

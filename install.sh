@@ -9,3 +9,5 @@ stow i3
 stow ion
 stow scripts
 stow x
+
+dconf load / < dconf

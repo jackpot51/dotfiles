@@ -1,1 +1,3 @@
+#!/bin/sh
+
 gnome-builder "$@" &>/dev/null &disown

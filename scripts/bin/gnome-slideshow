@@ -10,9 +10,8 @@ fi
 
 FOLDER="$(realpath "$1")"
 PICTURES=("${FOLDER}"/*)
-while true
+while sleep 60
 do
     PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
     dconf write "/org/gnome/desktop/background/picture-uri" "'file://${PICTURE}'"
-    sleep 60
 done

@@ -1,7 +1,9 @@
 [user]
-	email = jackpot51@gmail.com
+	email = jeremy@system76.com
 	name = Jeremy Soller
 [push]
 	default = simple
 [credential]
 	helper = store
+[commit]
+	gpgsign = true

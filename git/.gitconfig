@@ -7,3 +7,11 @@
 	helper = store
 [commit]
 	gpgsign = true
+[diff "hex"]
+	textconv = xxd
+	binary = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	smudge = git-lfs smudge -- %f
+	required = true

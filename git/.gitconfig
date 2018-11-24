@@ -1,7 +1,17 @@
 [user]
-	email = jackpot51@gmail.com
+	email = jeremy@system76.com
 	name = Jeremy Soller
 [push]
 	default = simple
 [credential]
 	helper = store
+[commit]
+	gpgsign = true
+[diff "hex"]
+	textconv = xxd
+	binary = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	smudge = git-lfs smudge -- %f
+	required = true

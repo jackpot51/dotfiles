@@ -4,7 +4,7 @@ set -x
 
 stow bash
 stow feh
-#stow git
+stow git
 stow gnome
 stow i3
 stow ion

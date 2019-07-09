@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo -en "\033]0;$1\a"
+shift
+exec "$@"

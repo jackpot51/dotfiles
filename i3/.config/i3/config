@@ -38,7 +38,7 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec xterm
 
 # start firefox
 bindsym $mod+Shift+Return exec firefox
@@ -143,7 +143,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # switch backgrounds
 bindsym $mod+BackSpace exec "~/.fehbg"
 # lock i3
-bindsym $mod+Shift+BackSpace exec "i3lock -n -c 000000 -e -f"
+bindsym $mod+Shift+BackSpace exec "lock"
 
 # copy selection to clipboard
 bindsym $mod+c exec "xsel -op | xsel -ib"

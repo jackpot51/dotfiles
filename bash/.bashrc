@@ -122,3 +122,6 @@ set bell-style none
 # VI Mode
 #set -o vi
 #bind 'set show-mode-in-prompt on'
+
+# Set transparency for xterm
+[ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" 0.75 >/dev/null

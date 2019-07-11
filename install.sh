@@ -2,6 +2,7 @@
 
 set -x
 
+stow alacritty
 stow bash
 stow feh
 stow git

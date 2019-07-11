@@ -124,4 +124,7 @@ set bell-style none
 #bind 'set show-mode-in-prompt on'
 
 # Set transparency for xterm
-[ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" 0.75 >/dev/null
+[ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" 0.85 >/dev/null
+
+# (temporary, see https://github.com/jwilm/alacritty/issues/2254) Set transparency for alacritty
+[ -n "$ALACRITTY_LOG" ] && transset --id "$WINDOWID" 0.85 >/dev/null

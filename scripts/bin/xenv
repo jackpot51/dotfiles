@@ -8,6 +8,12 @@ then
     "${HOME}/.screenlayout/$(hostname).sh"
 fi
 
+# Load X resources
+if [ -e "${HOME}/.Xresources" ]
+then
+    xrdb "${HOME}/.Xresources"
+fi
+
 # Load keyboard mapping
 if [ -e "${HOME}/.Xmodmap" ]
 then

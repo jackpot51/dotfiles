@@ -4,6 +4,7 @@ set -ex
 
 # Disable screen blanking on inactivity
 xset s off
+xset dpms 0 0 0
 
 # Set layout if found
 if [ -e "${HOME}/.screenlayout/$(hostname).sh" ]

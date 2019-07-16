@@ -15,3 +15,5 @@
 	process = git-lfs filter-process
 	smudge = git-lfs smudge -- %f
 	required = true
+[diff]
+	tool = meld

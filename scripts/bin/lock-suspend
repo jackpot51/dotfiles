@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+i3lock -c 000000 -e -f
+systemctl suspend

@@ -1,9 +1,10 @@
-if test -e ~/.config/ion/lwd
-    echo "lwd: $(cat ~/.config/ion/lwd)"
-    cd "$(cat ~/.config/ion/lwd)"
+if test -e "/run/user/${UID}/lwd"
+    let lwd="$(cat "/run/user/${UID}/lwd")"
+    echo "lwd: ${lwd}"
+    cd "${lwd}"
 end
 
 fn PROMPT
-    pwd > ~/.config/ion/lwd
+    pwd > "/run/user/${UID}/lwd"
     echo -n "${x::1B}]0;${PWD}${x::07}${c::bold}${c::0x4B}${SWD}${c::default}# ${c::reset}"
 end

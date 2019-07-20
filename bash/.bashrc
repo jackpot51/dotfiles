@@ -134,3 +134,12 @@ do
     [ -n "$ALACRITTY_LOG" ] && "${transset}" --id "$WINDOWID" 0.85 >/dev/null
   fi
 done
+
+if [ -e "/run/user/${UID}/lwd" ]
+then
+    lwd="$(cat "/run/user/${UID}/lwd")"
+    echo "lwd: ${lwd}"
+    cd "${lwd}"
+fi
+
+PROMPT_COMMAND='pwd > "/run/user/${UID}/lwd"'

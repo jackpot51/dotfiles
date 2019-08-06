@@ -31,5 +31,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export DEBEMAIL="jeremy@system76.com"
 export DEBFULLNAME="Jeremy Soller"
 
+export QUILT_PATCHES="debian/patches"
+
 # Fix for alacritty scaling
 export WINIT_HIDPI_FACTOR=1.0

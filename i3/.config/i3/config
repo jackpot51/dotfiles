@@ -190,3 +190,6 @@ for_window [class=".*"] border pixel 2
 
 # gaps
 gaps inner 2
+
+# disable mouse warp (mainly because it changes focus when moving windows to different monitors)
+mouse_warping none

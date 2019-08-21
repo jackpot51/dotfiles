@@ -128,14 +128,14 @@ do
   if hash "${transset}" &>/dev/null
   then
     # Set transparency for xterm
-    [ -n "$XTERM_VERSION" ] && "${transset}" --id "$WINDOWID" 0.85 >/dev/null
+    [ -n "${XTERM_VERSION}" ] && "${transset}" --id "${WINDOWID}" 0.85 >/dev/null
 
     # (temporary, see https://github.com/jwilm/alacritty/issues/2254) Set transparency for alacritty
-    [ -n "$ALACRITTY_LOG" ] && "${transset}" --id "$WINDOWID" 0.85 >/dev/null
+    [ -n "${ALACRITTY_LOG}" ] && "${transset}" --id "${WINDOWID}" 0.85 >/dev/null
   fi
 done
 
-if [ -e "/run/user/${UID}/lwd" ]
+if [ -z "${GNOME_TERMINAL_SCREEN}" -a -e "/run/user/${UID}/lwd" ]
 then
     lwd="$(cat "/run/user/${UID}/lwd")"
     echo "lwd: ${lwd}"

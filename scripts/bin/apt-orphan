@@ -1,0 +1,4 @@
+#!/bin/bash
+
+apt-show-versions | grep 'No available' | cut -d ' ' -f 1
+

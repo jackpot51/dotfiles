@@ -24,6 +24,18 @@ font pango:DejaVu Sans Mono 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# Colors
+set $active #474749E0
+set $fg     #FFFFFF
+set $bg     #2A2A2EE0
+set $bar    #2A2A2EE0
+
+# Window Border color   border  backgr  text  indicator
+client.focused          $active $active $fg   $fg
+client.focused_inactive $bg     $bg     $fg   $fg
+client.unfocused        $bg     $bg     $fg   $fg
+client.urgent           $bg     $bg     $fg   $fg
+
 # Set modifier
 set $mod Mod4
 
@@ -175,7 +187,7 @@ bar {
   status_command i3status
   tray_output primary
   colors {
-    background #2b2928e0
+    background $bar
   }
 }
 
@@ -189,7 +201,7 @@ exec --no-startup-id xenv
 for_window [class=".*"] border pixel 2
 
 # gaps
-gaps inner 2
+gaps inner 8
 
 # disable mouse warp (mainly because it changes focus when moving windows to different monitors)
 mouse_warping none

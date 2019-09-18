@@ -15,7 +15,7 @@ fi
 # Load X resources
 if [ -e "${HOME}/.Xresources" ]
 then
-    xrdb "${HOME}/.Xresources"
+    xrdb -merge "${HOME}/.Xresources"
 fi
 
 # Load keyboard mapping

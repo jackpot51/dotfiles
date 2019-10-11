@@ -135,11 +135,15 @@ do
   fi
 done
 
-if [ -z "${GNOME_TERMINAL_SCREEN}" -a -e "/run/user/${UID}/lwd" ]
-then
+function lwd {
     lwd="$(cat "/run/user/${UID}/lwd")"
     echo "lwd: ${lwd}"
     cd "${lwd}"
+}
+
+if [ -z "${GNOME_TERMINAL_SCREEN}" -a -e "/run/user/${UID}/lwd" ]
+then
+    lwd
 fi
 
 PROMPT_COMMAND='pwd > "/run/user/${UID}/lwd"'

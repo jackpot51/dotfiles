@@ -11,6 +11,7 @@ stow gnome
 stow i3
 stow ion
 stow scripts
+stow vim
 stow x
 
 dconf load / < dconf

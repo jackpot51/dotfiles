@@ -141,7 +141,7 @@ function lwd {
     cd "${lwd}"
 }
 
-if [ -z "${GNOME_TERMINAL_SCREEN}" -a -e "/run/user/${UID}/lwd" ]
+if [ -e "/run/user/${UID}/lwd" ]
 then
     lwd
 fi

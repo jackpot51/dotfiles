@@ -12,6 +12,7 @@ stow i3
 stow ion
 stow neovim
 stow scripts
+stow vifm
 stow vim
 stow x
 

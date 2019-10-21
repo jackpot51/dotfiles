@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Xilinx Information Center
+Comment=Xilinx Information Center
+Icon=/home/jeremy/Xilinx/xic/data/images/xlnx_logo.png
+Exec=/home/jeremy/Xilinx/xic/xic -c -t

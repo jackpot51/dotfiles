@@ -120,8 +120,10 @@ fi
 set bell-style none
 
 # VI Mode
-#set -o vi
-#bind 'set show-mode-in-prompt on'
+set -o vi
+bind 'set show-mode-in-prompt on'
+bind 'set vi-ins-mode-string +'
+bind 'set vi-cmd-mode-string :'
 
 for transset in transset transset-df
 do

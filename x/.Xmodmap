@@ -26,4 +26,5 @@ keycode 44 = j J Down
 keycode 45 = k K Up
 keycode 46 = l L Right
 keycode 47 = semicolon colon Escape
+keycode 48 = apostrophe quotedbl BackSpace
 keycode 57 = n N End

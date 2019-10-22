@@ -1,12 +1,29 @@
 clear Lock
 keycode 66 = Mode_switch
 
+! Number row
+keycode  9 = Escape asciitilde grave
+keycode 10 = 1 exclam F1
+keycode 11 = 2 at F2
+keycode 12 = 3 numbersign F3
+keycode 13 = 4 dollar F4
+keycode 14 = 5 percent F5
+keycode 15 = 6 asciicircum F6
+keycode 16 = 7 ampersand F7
+keycode 17 = 8 asterisk F8
+keycode 18 = 9 parenleft F9
+keycode 19 = 0 parenright F10
+keycode 20 = minus underscore F11
+keycode 21 = equal plus F12
 keycode 22 = BackSpace BackSpace Delete
+
+! Right hand
 keycode 30 = u U Page_Up
-keycode 31 = i I Up
+keycode 31 = i I Home
 keycode 32 = o O Page_Down
-keycode 43 = h H Home
-keycode 44 = j J Left
-keycode 45 = k K Down
+keycode 43 = h H Left
+keycode 44 = j J Down
+keycode 45 = k K Up
 keycode 46 = l L Right
+keycode 47 = semicolon colon Escape
 keycode 57 = n N End

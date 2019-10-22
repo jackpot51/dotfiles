@@ -41,9 +41,9 @@ set $mod Mod4
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up i
-set $down k
-set $left j
+set $up k
+set $down j
+set $left h
 set $right l
 
 # use Mouse+$mod to drag floating windows to their wanted position
@@ -87,7 +87,7 @@ bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+Shift+v split h
 
 # split in vertical orientation
 bindsym $mod+v split v

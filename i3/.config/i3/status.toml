@@ -26,13 +26,17 @@ interval = 1
 format = "{1m}"
 
 [[block]]
-block = "battery"
+block = "temperature"
 
 [[block]]
 block = "backlight"
 
 [[block]]
 block = "sound"
+
+[[block]]
+block = "battery"
+format = "{percentage}% {time}"
 
 [[block]]
 block = "time"

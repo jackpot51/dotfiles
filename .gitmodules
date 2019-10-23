@@ -1,3 +1,6 @@
 [submodule "i3-gnome"]
 	path = i3-gnome
 	url = https://github.com/jackpot51/i3-gnome.git
+[submodule "i3status-rust"]
+	path = i3status-rust
+	url = https://github.com/greshake/i3status-rust.git

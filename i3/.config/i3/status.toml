@@ -27,6 +27,9 @@ format = "{1m}"
 
 [[block]]
 block = "temperature"
+collapsed = false
+format = "{max}°"
+chip = "*-isa-*"
 
 [[block]]
 block = "backlight"

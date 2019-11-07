@@ -19,11 +19,11 @@ keycode 22 = BackSpace BackSpace Delete
 
 ! Right hand
 keycode 30 = u U Page_Up
-keycode 31 = i I Home
+keycode 31 = i I Up
 keycode 32 = o O Page_Down
-keycode 43 = h H Left
-keycode 44 = j J Down
-keycode 45 = k K Up
+keycode 43 = h H Home
+keycode 44 = j J Left
+keycode 45 = k K Down
 keycode 46 = l L Right
 keycode 47 = semicolon colon Escape
 keycode 48 = apostrophe quotedbl BackSpace

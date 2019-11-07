@@ -3,3 +3,4 @@
 :set colorcolumn=80
 :set number
 :set relativenumber
+:set tabstop=4 shiftwidth=4 softtabstop=4 expandtab

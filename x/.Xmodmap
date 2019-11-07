@@ -1,5 +1,6 @@
 clear Lock
 keycode 66 = Mode_switch
+keycode 135 = Mode_switch
 
 ! Number row
 keycode  9 = Escape asciitilde grave

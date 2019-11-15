@@ -24,6 +24,12 @@ then
     xmodmap "${HOME}/.Xmodmap"
 fi
 
+# Tapping capslock (our Mode_switch modifier) will generate escape
+if [ -n "$(which xcape)" ]
+then
+    xcape -e 'Mode_switch=Escape'
+fi
+
 # Randomize background
 if [ -e "${HOME}/.fehbg" ]
 then

@@ -31,4 +31,4 @@ keycode 46 = l L Right
 keycode 47 = semicolon colon Insert
 keycode 48 = apostrophe quotedbl Delete
 keycode 57 = n N End
-keycode 64 = space space BackSpace
+keycode 65 = space space BackSpace

@@ -24,10 +24,10 @@ then
     xmodmap "${HOME}/.Xmodmap"
 fi
 
-# Tapping capslock (our Mode_switch modifier) will generate escape
+# Tapping control will generate escape
 if [ -n "$(which xcape)" ]
 then
-    xcape -e 'Mode_switch=Escape'
+    xcape -e 'Control_L=Escape'
 fi
 
 # Randomize background

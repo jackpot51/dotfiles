@@ -17,3 +17,5 @@ stow vim
 stow x
 
 dconf load / < dconf
+
+vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q

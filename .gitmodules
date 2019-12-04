@@ -4,3 +4,7 @@
 [submodule "i3status-rust"]
 	path = i3status-rust
 	url = https://github.com/greshake/i3status-rust.git
+[submodule "vim/.vim/pack/vendor/start/nerdtree"]
+	path = vim/.vim/pack/vendor/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+	branch = master

@@ -125,15 +125,14 @@ bind 'set show-mode-in-prompt on'
 bind 'set vi-ins-mode-string +'
 bind 'set vi-cmd-mode-string :'
 
+shopt -s autocd
+
 for transset in transset transset-df
 do
   if hash "${transset}" &>/dev/null
   then
     # Set transparency for xterm
     [ -n "${XTERM_VERSION}" ] && "${transset}" --id "${WINDOWID}" 0.85 >/dev/null
-
-    # (temporary, see https://github.com/jwilm/alacritty/issues/2254) Set transparency for alacritty
-    [ -n "${ALACRITTY_LOG}" ] && "${transset}" --id "${WINDOWID}" 0.85 >/dev/null
   fi
 done
 

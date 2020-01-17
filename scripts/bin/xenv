@@ -48,6 +48,12 @@ then
     nohup dunst >/dev/null &
 fi
 
+# Clipboard manager
+if [ -n "$(which parcellite)" ]
+then
+    nohup parcellite >/dev/null &
+fi
+
 # Network connections
 if [ -n "$(which nm-applet)" ]
 then

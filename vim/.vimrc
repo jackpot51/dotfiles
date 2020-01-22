@@ -1,5 +1,6 @@
 colorscheme pablo
 filetype plugin indent on
+set clipboard=unnamedplus
 set colorcolumn=80
 set number
 set relativenumber

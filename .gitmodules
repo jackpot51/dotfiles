@@ -8,3 +8,6 @@
 	path = vim/.vim/pack/vendor/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	branch = master
+[submodule "ion-vim"]
+	path = ion-vim
+	url = https://gitlab.redox-os.org/redox-os/ion-vim.git

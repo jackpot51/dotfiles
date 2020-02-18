@@ -26,13 +26,22 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Add cargo binaries to path
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Set default editor
 export EDITOR=vim
 
+# Set debian maintainer stuff
 export DEBEMAIL="jeremy@system76.com"
 export DEBFULLNAME="Jeremy Soller"
 export QUILT_PATCHES="debian/patches"
 
 # Fix for alacritty scaling
 export WINIT_HIDPI_FACTOR=1.0
+
+# Start gnome-keyring-daemon if installed
+if [ -x /usr/bin/gnome-keyring-daemon ]
+then
+    export $(/usr/bin/gnome-keyring-daemon --start)
+fi

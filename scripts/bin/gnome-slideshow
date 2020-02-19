@@ -9,9 +9,7 @@ then
 fi
 
 FOLDER="$(realpath "$1")"
-PICTURES=("${FOLDER}"/*)
 while sleep 60
 do
-    PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
-    dconf write "/org/gnome/desktop/background/picture-uri" "'file://${PICTURE}'"
+    gnome-slideshow-once "$FOLDER"
 done

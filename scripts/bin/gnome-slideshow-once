@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+if [ -z "$1" ]
+then
+    echo "$0 [folder]"
+    exit 1
+fi
+
+FOLDER="$(realpath "$1")"
+PICTURES=("${FOLDER}"/*)
+PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
+dconf write "/org/gnome/desktop/background/picture-uri" "'file://${PICTURE}'"

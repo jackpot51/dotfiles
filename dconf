@@ -1,12 +1,25 @@
-[org/gnome/mutter]
-workspaces-only-on-primary=false
+[ca/desrt/dconf-editor]
+show-warning=false
 
-[org/gnome/shell]
-enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'pop-shop-details@system76.com', 'pop-suspend-button@system76.com', 'multi-monitors-add-on@spin83', 'donotdisturb@kylecorry31.github.io', 'batteryiconfix@kylecorry31.github.io', 'system76-power@system76.com']
+[com/system76/hidpi]
+enable=false
+
+[org/gnome/desktop/interface]
 enable-hot-corners=true
-
-[org/gnome/shell/overrides]
-workspaces-only-on-primary=false
 
 [org/gnome/desktop/peripherals/touchpad]
 disable-while-typing=false
+
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
+[org/gnome/mutter]
+workspaces-only-on-primary=false
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>BackSpace'
+command='bash -c "gnome-slideshow-once ~/Pictures/Backgrounds"'
+name='Change Background'
+
+[org/gnome/shell/overrides]
+workspaces-only-on-primary=false

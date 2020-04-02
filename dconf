@@ -4,14 +4,21 @@ show-warning=false
 [com/system76/hidpi]
 enable=false
 
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
+
 [org/gnome/desktop/interface]
 enable-hot-corners=true
+gtk-theme='Pop-dark'
 
 [org/gnome/desktop/peripherals/touchpad]
 disable-while-typing=false
 
 [org/gnome/desktop/session]
 idle-delay=uint32 0
+
+[org/gnome/gedit/preferences/editor]
+scheme='pop-dark'
 
 [org/gnome/mutter]
 workspaces-only-on-primary=false

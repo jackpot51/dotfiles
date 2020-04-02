@@ -26,6 +26,7 @@ name='Change Background'
 
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true
+show-title=false
 tile-by-default=true
 
 [org/gnome/shell/overrides]

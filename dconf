@@ -31,6 +31,9 @@ binding='<Super>BackSpace'
 command='bash -c "gnome-slideshow-once ~/Pictures/Backgrounds"'
 name='Change Background'
 
+[org/gnome/shell]
+favorite-apps=@as []
+
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true
 show-title=false

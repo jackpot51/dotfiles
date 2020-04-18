@@ -1,0 +1,12 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+  editor:
+    tabLength: 4
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

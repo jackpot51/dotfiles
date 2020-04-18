@@ -3,6 +3,7 @@
 set -x
 
 stow alacritty
+stow atom
 stow bash
 stow feh
 stow git

@@ -24,12 +24,6 @@ then
     xmodmap "${HOME}/.Xmodmap"
 fi
 
-# Tapping control will generate escape
-if [ -n "$(which xcape)" ]
-then
-    xcape -e 'Control_L=Escape'
-fi
-
 # Randomize background
 if [ -e "${HOME}/.fehbg" ]
 then

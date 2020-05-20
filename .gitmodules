@@ -11,3 +11,6 @@
 [submodule "ion-vim"]
 	path = ion-vim
 	url = https://gitlab.redox-os.org/redox-os/ion-vim.git
+[submodule "vim/.vim/pack/vendor/start/vim-orgmode"]
+	path = vim/.vim/pack/vendor/start/vim-orgmode
+	url = https://github.com/jceb/vim-orgmode

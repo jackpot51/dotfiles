@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -e
+
+nvidia-settings -a GPUFanControlState=1 -a GPUTargetFanSpeed=0

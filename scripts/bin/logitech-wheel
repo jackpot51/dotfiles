@@ -1,0 +1,1 @@
+sudo usb_modeswitch -v 046d -p c261 -m 1 -r 1 -C 3 -M 0f00010142

@@ -143,7 +143,7 @@ function lwd {
     cd "${lwd}"
 }
 
-if [ -e "/run/user/${UID}/lwd" ]
+if [ -e "/run/user/${UID}/lwd" -a "${PWD}" == "${HOME}" ]
 then
     lwd
 fi

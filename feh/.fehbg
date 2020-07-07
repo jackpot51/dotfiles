@@ -1,3 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-feh --recursive --randomize --no-fehbg --bg-fill "${HOME}/Pictures/Backgrounds"
+set -e
+
+FOLDER="${HOME}/Pictures/Backgrounds"
+PICTURES=("${FOLDER}"/*)
+PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
+feh --no-fehbg --bg-fill "${PICTURE}"

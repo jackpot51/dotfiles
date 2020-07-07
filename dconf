@@ -41,3 +41,6 @@ tile-by-default=true
 
 [org/gnome/shell/overrides]
 workspaces-only-on-primary=false
+
+[org/gnome/terminal/legacy]
+default-show-menubar=false

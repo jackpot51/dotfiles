@@ -4,6 +4,14 @@ show-warning=false
 [com/system76/hidpi]
 enable=false
 
+[org/gnome/desktop/app-folders]
+folder-children=['Pop-Office', 'Pop-System', 'Pop-Utility', 'KiCad']
+
+[org/gnome/desktop/app-folders/folders/KiCad]
+apps=['eeschema.desktop', 'bitmap2component.desktop', 'gerbview.desktop', 'kicad.desktop', 'pcbcalculator.desktop', 'pcbnew.desktop']
+name='KiCad'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
 name='Office'

@@ -5,7 +5,12 @@ show-warning=false
 enable=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['Pop-Office', 'Pop-System', 'Pop-Utility', 'KiCad']
+folder-children=['Pop-Office', 'Pop-System', 'Pop-Utility', 'Games', 'KiCad']
+
+[org/gnome/desktop/app-folders/folders/Games]
+categories=['Game']
+name='Games'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/KiCad]
 apps=['eeschema.desktop', 'bitmap2component.desktop', 'gerbview.desktop', 'kicad.desktop', 'pcbcalculator.desktop', 'pcbnew.desktop']

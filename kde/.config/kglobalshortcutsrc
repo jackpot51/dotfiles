@@ -226,6 +226,10 @@ view_actual_size=,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[org.kde.dolphin.desktop]
+_k_friendly_name=Launch Dolphin
+_launch=Meta+F,Meta+E,Launch Dolphin
+
 [org.kde.konsole.desktop]
 NewTab=,none,Open a New Tab
 NewWindow=none,none,Open a New Window

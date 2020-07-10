@@ -2,8 +2,13 @@
 DefaultProfile=Profile.profile
 
 [Favorite Profiles]
-Favorites=
+Favorites=Profile.profile
 
 [KonsoleWindow]
 SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAACfgAAAWYAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled

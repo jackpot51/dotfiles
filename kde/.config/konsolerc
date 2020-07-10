@@ -5,13 +5,5 @@ DefaultProfile=Profile.profile
 Favorites=
 
 [KonsoleWindow]
+SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
-
-[MainWindow]
-Height 1080=1051
-Height 1440=1432
-State=AAAA/wAAAAD9AAAAAAAACfgAAAV2AAAABAAAAAQAAAAIAAAACPwAAAAA
-ToolBarsMovable=Disabled
-Width 1920=956
-Width 2560=2552
-Window-Maximized 1080x1920=true

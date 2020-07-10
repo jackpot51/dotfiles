@@ -11,6 +11,7 @@ stow gtk
 stow gnome
 stow i3
 stow ion
+stow kde
 stow neovim
 stow scripts
 stow vifm

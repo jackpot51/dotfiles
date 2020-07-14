@@ -5,7 +5,12 @@ show-warning=false
 enable=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['Pop-Office', 'Pop-System', 'Pop-Utility', 'Games', 'KiCad']
+folder-children=['Pop-Office', 'Pop-System', 'Pop-Utility', 'CLI', 'Games', 'KiCad']
+
+[org/gnome/desktop/app-folders/folders/CLI]
+apps=['htop.desktop', 'compton.desktop', 'arandr.desktop', 'gvim.desktop', 'vim.desktop', 'winetricks.desktop', 'phoronix-test-suite.desktop']
+name='CLI'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/Games]
 categories=['Game']

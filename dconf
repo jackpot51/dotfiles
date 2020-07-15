@@ -69,6 +69,12 @@ name='Change Background'
 
 [org/gnome/shell]
 favorite-apps=@as []
+enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'batteryiconfix@kylecorry31.github.io', 'desktop-icons@csoriano', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'hidetopbar@mathieu.bidon.ca']
+
+[org/gnome/shell/extensions/hidetopbar]
+enable-active-window=true
+enable-intellihide=false
+mouse-sensitive=true
 
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true

@@ -4,8 +4,8 @@ set -e
 
 while true
 do
-    last="$(cat /sys/class/powercap/intel-rapl\:0/energy_uj)"
+    last="$(sudo cat /sys/class/powercap/intel-rapl\:0/energy_uj)"
     sleep 1
-    next="$(cat /sys/class/powercap/intel-rapl\:0/energy_uj)"
+    next="$(sudo cat /sys/class/powercap/intel-rapl\:0/energy_uj)"
     echo "(${next} - ${last})/1000000" | bc -lq
 done

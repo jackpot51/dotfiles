@@ -5,7 +5,7 @@ set colorcolumn=80
 set cursorline
 set number
 set relativenumber
-set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
 map <C-Bslash> :NERDTreeToggle<CR>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>

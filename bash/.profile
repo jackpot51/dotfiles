@@ -40,6 +40,9 @@ export QUILT_PATCHES="debian/patches"
 # Fix for alacritty scaling
 export WINIT_HIDPI_FACTOR=1.0
 
+# Set QT theme, requires qt5-style-plugins
+export QT_QPA_PLATFORMTHEME=gtk2
+
 # Start gnome-keyring-daemon if installed
 if [ -x /usr/bin/gnome-keyring-daemon ]
 then

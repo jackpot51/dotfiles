@@ -5,8 +5,8 @@
     excludeVcsIgnoredPaths: false
     telemetryConsent: "no"
   editor:
+    showInvisibles: true
     tabLength: 4
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false

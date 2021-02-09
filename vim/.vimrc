@@ -3,6 +3,7 @@ filetype plugin indent on
 set clipboard=unnamedplus
 set colorcolumn=80
 set cursorline
+set hlsearch
 set number
 set relativenumber
 set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab

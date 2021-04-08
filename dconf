@@ -50,8 +50,20 @@ disable-while-typing=false
 [org/gnome/desktop/session]
 idle-delay=uint32 0
 
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:close'
+
 [org/gnome/gedit/preferences/editor]
 scheme='pop-dark'
+
+[org/gnome/meld]
+draw-spaces=['space', 'tab', 'newline', 'nbsp', 'leading', 'text', 'trailing']
+highlight-current-line=true
+highlight-syntax=true
+show-line-numbers=true
+style-scheme='pop-dark'
+use-system-font=true
+wrap-mode='none'
 
 [org/gnome/mutter]
 workspaces-only-on-primary=false
@@ -68,13 +80,13 @@ command='bash -c "gnome-slideshow-once ~/Pictures/Backgrounds"'
 name='Change Background'
 
 [org/gnome/shell]
+enabled-extensions=['ding@rastersoft.com', 'multi-monitors-add-on@spin83', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'clipboard-indicator@tudmotu.com']
 favorite-apps=@as []
-enabled-extensions=['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'batteryiconfix@kylecorry31.github.io', 'desktop-icons@csoriano', 'pop-shell@system76.com', 'pop-shop-details@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'hidetopbar@mathieu.bidon.ca']
 
-[org/gnome/shell/extensions/hidetopbar]
-enable-active-window=true
-enable-intellihide=false
-mouse-sensitive=true
+[org/gnome/shell/extensions/dash-to-dock]
+dock-fixed=false
+dock-position='BOTTOM'
+manualhide=true
 
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true

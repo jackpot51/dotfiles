@@ -2,6 +2,16 @@
 
 set -x
 
+if [ ! -d /usr/share/fonts/truetype/ibm-plex/ ]
+then
+	sudo apt-get install fonts-ibm-plex
+fi
+
+if [ ! -f /usr/bin/vim.gtk3 ]
+then
+	sudo apt-get install vim-gtk3
+fi
+
 stow alacritty
 stow atom
 stow bash

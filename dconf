@@ -56,6 +56,9 @@ button-layout='appmenu:close'
 [org/gnome/gedit/preferences/editor]
 scheme='pop-dark'
 
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
 [org/gnome/meld]
 draw-spaces=['space', 'tab', 'newline', 'nbsp', 'leading', 'text', 'trailing']
 highlight-current-line=true
@@ -100,4 +103,5 @@ workspaces-only-on-primary=false
 default-show-menubar=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+font='IBM Plex Mono 12'
 scrollback-unlimited=true

@@ -7,6 +7,11 @@ then
 	sudo apt-get install fonts-ibm-plex
 fi
 
+if [ ! -f /usr/bin/stow ]
+then
+	sudo apt-get install stow
+fi
+
 if [ ! -f /usr/bin/vim.gtk3 ]
 then
 	sudo apt-get install vim-gtk3

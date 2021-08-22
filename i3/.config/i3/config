@@ -197,6 +197,9 @@ for_window [title="^QEMU.*$"] floating enable
 # prepare X environment
 exec --no-startup-id xenv
 
+# automatic orientation
+exec_always --no-startup-id i3-auto-layout
+
 # remove title bars
 for_window [class=".*"] border pixel 2
 

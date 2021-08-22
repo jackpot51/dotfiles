@@ -14,3 +14,7 @@
 [submodule "vim/.vim/pack/vendor/start/vim-orgmode"]
 	path = vim/.vim/pack/vendor/start/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode
+[submodule "i3-auto-layout"]
+	path = i3-auto-layout
+	url = https://github.com/chmln/i3-auto-layout.git
+	branch = master

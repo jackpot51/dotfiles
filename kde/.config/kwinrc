@@ -9,6 +9,9 @@ Id_1=c487e926-6e0d-4831-a805-568eeb563479
 Number=1
 Rows=1
 
+[ModifierOnlyShortcuts]
+Meta=org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu
+
 [MouseBindings]
 CommandActiveTitlebar1=Raise
 CommandActiveTitlebar2=Nothing

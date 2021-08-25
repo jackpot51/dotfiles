@@ -18,3 +18,7 @@
 	path = i3-auto-layout
 	url = https://github.com/chmln/i3-auto-layout.git
 	branch = master
+[submodule "kde/.local/share/kwin/scripts/grid-tiling"]
+	path = kde/.local/share/kwin/scripts/grid-tiling
+	url = https://github.com/lingtjien/Grid-Tiling-Kwin
+	branch = master

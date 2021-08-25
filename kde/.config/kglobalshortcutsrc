@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-5327d61f-bf4d-4718-83ed-04e81eddee2b=none,none,Switch to activity "Default"
+switch-to-activity-d518424b-b6e2-4874-8f7b-9ebaca6f2852=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
@@ -29,7 +30,7 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings
+_k_friendly_name=Custom Shortcuts Service
 {416a75aa-af7a-49a2-aa47-c8b95b6efcce}=none,none,Launch Konsole
 {5e591bc3-b8fc-40e7-bcf3-bb72131bd321}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
 {76f53fe2-25ac-4a2c-abf4-50b011bd1ce0}=Print,none,Start Screenshot Tool
@@ -54,7 +55,7 @@ decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decreas
 decrease_volume=Volume Down,Volume Down,Decrease Volume
 increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
 increase_volume=Volume Up,Volume Up,Increase Volume
-mic_mute=Microphone Mute,Microphone Mute,Mute Microphone
+mic_mute=Microphone Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
 mute=Volume Mute,Volume Mute,Mute
 
 [krunner.desktop]
@@ -65,10 +66,10 @@ _launch=Meta+/\t\tSearch,Alt+Space\tAlt+F2\tSearch,KRunner
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,none,Halt Without Confirmation
 Lock Session=Meta+Esc\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
-Log Out=Ctrl+Alt+Del,none,Log Out
+Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=System Settings
+_k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=none,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -79,8 +80,12 @@ Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
 Grid-Tiling: Close Desktop=,none,Grid-Tiling: Close Desktop
+Grid-Tiling: Decrease Max=Meta+_,none,Grid-Tiling: Decrease Max
 Grid-Tiling: Decrease Size=,none,Grid-Tiling: Decrease Size
+Grid-Tiling: Decrease Step=,none,Grid-Tiling: Decrease Step
+Grid-Tiling: Increase Max=Meta++,none,Grid-Tiling: Increase Max
 Grid-Tiling: Increase Size=,none,Grid-Tiling: Increase Size
+Grid-Tiling: Increase Step=,none,Grid-Tiling: Increase Step
 Grid-Tiling: Minimize Others/Unminimize Desktop=,none,Grid-Tiling: Minimize Others/Unminimize Desktop
 Grid-Tiling: Move Next Desktop/Screen=Meta+Shift+O,none,Grid-Tiling: Move Next Desktop/Screen
 Grid-Tiling: Move Previous Desktop/Screen=Meta+Shift+U,none,Grid-Tiling: Move Previous Desktop/Screen
@@ -92,6 +97,7 @@ Grid-Tiling: Swap Up=Meta+Shift+K,none,Grid-Tiling: Swap Up
 Grid-Tiling: Tile/Float=,none,Grid-Tiling: Tile/Float
 Grid-Tiling: Toggle Border=none,none,Grid-Tiling: Toggle Border
 Grid-Tiling: Toggle Gap=none,none,Grid-Tiling: Toggle Gap
+Grid-Tiling: Toggle Minimize Desktop=,none,Grid-Tiling: Toggle Minimize Desktop
 Grid-Tiling: Toggle Tile=none,none,Grid-Tiling: Toggle Tile
 Increase Opacity=none,none,Increase Opacity of Active Window by 5 %
 Invert Screen Colors=none,none,Invert Screen Colors
@@ -178,10 +184,10 @@ Window Minimize=none,Meta+PgDown,Minimize Window
 Window Move=none,none,Move Window
 Window No Border=none,none,Hide Window Border
 Window On All Desktops=none,none,Keep Window on All Desktops
-Window One Desktop Down=none,none,Window One Desktop Down
-Window One Desktop Up=none,none,Window One Desktop Up
-Window One Desktop to the Left=none,none,Window One Desktop to the Left
-Window One Desktop to the Right=none,none,Window One Desktop to the Right
+Window One Desktop Down=none,Meta+Ctrl+Shift+Down,Window One Desktop Down
+Window One Desktop Up=none,Meta+Ctrl+Shift+Up,Window One Desktop Up
+Window One Desktop to the Left=none,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+Window One Desktop to the Right=none,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
 Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
 Window Pack Down=none,none,Pack Window Down
 Window Pack Left=none,none,Pack Window to the Left
@@ -221,9 +227,9 @@ Window to Desktop 7=none,none,Window to Desktop 7
 Window to Desktop 8=none,none,Window to Desktop 8
 Window to Desktop 9=none,none,Window to Desktop 9
 Window to Next Desktop=none,none,Window to Next Desktop
-Window to Next Screen=none,none,Window to Next Screen
+Window to Next Screen=none,Meta+Shift+Right,Window to Next Screen
 Window to Previous Desktop=none,none,Window to Previous Desktop
-Window to Previous Screen=none,none,Window to Previous Screen
+Window to Previous Screen=none,Meta+Shift+Left,Window to Previous Screen
 Window to Screen 0=none,none,Window to Screen 0
 Window to Screen 1=none,none,Window to Screen 1
 Window to Screen 2=none,none,Window to Screen 2
@@ -247,9 +253,23 @@ NewWindow=none,none,Open a New Window
 _k_friendly_name=Launch Konsole
 _launch=Meta+T,none,Launch Konsole
 
+[org.kde.krunner.desktop]
+RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
+_k_friendly_name=KRunner
+_launch=Alt+Space\tAlt+F2\t,Alt+Space\tAlt+F2\tSearch,KRunner
+
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
 _launch=Meta+.,Meta+.,Emoji Selector
+
+[org.kde.spectacle.desktop]
+ActiveWindowScreenShot=,Meta+Print,Capture Active Window
+CurrentMonitorScreenShot=,,Capture Current Monitor
+FullScreenScreenShot=,Shift+Print,Capture Entire Desktop
+RectangularRegionScreenShot=,Meta+Shift+Print,Capture Rectangular Region
+WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Capture Window Under Cursor
+_k_friendly_name=Spectacle
+_launch=,Print,Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -276,19 +296,20 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
-activate widget 42=Alt+F1,none,Activate Application Launcher Widget
+activate widget 3=Alt+F1,none,Activate Application Launcher Widget
+activate widget 42=,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
-manage activities=,Meta+Q,Activities...
+manage activities=,Meta+Q,Show Activity Switcher
 next activity=Meta+Tab,Meta+Tab,Walk through activities
 previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
 show dashboard=none,Ctrl+F12,Show Desktop
 show-barcode=none,none,Show Barcode...
-show-on-mouse-pos=none,none,Open Klipper at Mouse Position
+show-on-mouse-pos=none,Meta+V,Open Klipper at Mouse Position
 stop current activity=none,Meta+S,Stop Current Activity
 switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity

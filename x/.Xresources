@@ -1,6 +1,6 @@
 ! Set font
-xterm*faceName: DejaVu Sans Mono
-xterm*faceSize: 10
+xterm*faceName: IBM Plex Mono
+xterm*faceSize: 12
 
 ! Set geometry
 xterm*vt100*geometry: 80x40

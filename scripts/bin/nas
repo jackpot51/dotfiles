@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+SRC="//192.168.0.1/G"
+DST="/nas"
+
+set -ex
+
+if [ ! -f /sbin/mount.cifs ]
+then
+	sudo apt-get install cifs-utils
+fi
+
+sudo mkdir -p "$DST"
+
+if mount | grep "$SRC on $DST type cifs" > /dev/null
+then
+	sudo umount "$DST"
+fi
+
+sudo mount.cifs "$SRC" "$DST" -o "rw,guest,uid=$UID,gid=$GROUPS,iocharset=utf8,vers=2.0"

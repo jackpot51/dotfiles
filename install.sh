@@ -20,6 +20,7 @@ fi
 stow alacritty
 stow atom
 stow bash
+stow emulation
 stow feh
 stow git
 stow gtk

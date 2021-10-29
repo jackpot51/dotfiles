@@ -2,6 +2,8 @@
 
 set -e
 
-cat /sys/devices/pci0000\:00/0000\:00\:18.3/hwmon/hwmon*/temp1_input
-sudo amd-ppt
+echo "CPU Temp: $(cat /sys/devices/pci0000\:00/0000\:00\:18.3/hwmon/hwmon*/temp1_input)"
+echo "CPU Power: $(sudo amd-ppt)"
+echo "Fan PWM: $(cat /sys/bus/usb/drivers/system76-io/*.1/hwmon/hwmon*/pwm1)"
+echo "Fan RPM: $(cat /sys/bus/usb/drivers/system76-io/*.1/hwmon/hwmon*/fan1_input)"
 grep MHz /proc/cpuinfo | sort -nr

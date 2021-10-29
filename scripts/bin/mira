@@ -5,11 +5,11 @@ set -e
 echo "CPU Temp: $(echo "$(cat /sys/devices/pci0000\:00/0000\:00\:18.3/hwmon/hwmon*/temp1_input) / 1000" | bc -q) C"
 echo "CPU Power: $(echo "$(sudo amd-ppt | cut -d / -f1) / 1000" | bc -q) W"
 echo "CPU Power Limit: $(echo "$(sudo amd-ppt | cut -d / -f2) / 1000" | bc -q) W"
-echo "CPU Fan PWM: $(cat /sys/bus/usb/drivers/system76-io/*.1/hwmon/hwmon*/pwm1)"
+echo "CPU Fan PWM: $(echo "$(cat /sys/bus/usb/drivers/system76-io/*.1/hwmon/hwmon*/pwm1) * 100 / 255" | bc -q)%"
 echo "CPU Fan RPM: $(cat /sys/bus/usb/drivers/system76-io/*.1/hwmon/hwmon*/fan1_input)"
 echo "GPU Temp: $(echo "$(cat /sys/class/drm/card0/device/hwmon/hwmon*/temp1_input) / 1000" | bc -q) C"
 echo "GPU Power: $(echo "$(cat /sys/class/drm/card0/device/hwmon/hwmon*/power1_average) / 1000000" | bc -q) W"
 echo "GPU Power Limit: $(echo "$(cat /sys/class/drm/card0/device/hwmon/hwmon*/power1_cap) / 1000000" | bc -q) W"
-echo "GPU Fan PWM: $(cat /sys/class/drm/card0/device/hwmon/hwmon*/pwm1)"
+echo "GPU Fan PWM: $(echo "$(cat /sys/class/drm/card0/device/hwmon/hwmon*/pwm1) * 100 / 255" | bc -q)%"
 echo "GPU Fan RPM: $(cat /sys/class/drm/card0/device/hwmon/hwmon*/fan1_input)"
 grep MHz /proc/cpuinfo | sort -nr

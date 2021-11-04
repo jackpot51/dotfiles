@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+import sys
+
+for arg in sys.argv[1:]:
+	x = int(arg, 0)
+	print(hex(x))
+	bit = 0
+	while x > 0:
+		if x & 1:
+			print("  bit", bit)
+		x >>= 1
+		bit += 1
+		

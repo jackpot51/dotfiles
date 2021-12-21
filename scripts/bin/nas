@@ -5,12 +5,12 @@ DST="${HOME}/nas"
 
 set -ex
 
-if [ ! -f /sbin/mount.cifs ]
+if ! command -v mount.cifs
 then
 	sudo apt-get install cifs-utils
 fi
 
-sudo mkdir -p "$DST"
+mkdir -p "$DST"
 
 if mount | grep "$SRC on $DST type cifs" > /dev/null
 then

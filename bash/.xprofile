@@ -1,0 +1,4 @@
+# load .profile for graphical sessions too
+if [ -f "$HOME/.profile" ]; then
+. "$HOME/.profile"
+fi

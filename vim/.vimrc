@@ -1,6 +1,7 @@
 colorscheme pablo
 filetype plugin indent on
 highlight Comment cterm=italic gui=italic
+set backspace=indent,eol,start
 set clipboard=unnamedplus
 set colorcolumn=80
 set cursorline

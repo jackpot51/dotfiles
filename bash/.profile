@@ -8,6 +8,12 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+# Only run if not loaded
+if [ "${DOTFILES_PROFILE_LOADED}" == "1" ]
+then
+	return
+fi
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -26,8 +32,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Add cargo binaries to path
-export PATH="$HOME/.cargo/bin:$PATH"
+# Add cargo binaries to path if it exits
+if [ -e "$HOME/.cargo/env" ] ; then
+	. "$HOME/.cargo/env"
+fi
 
 # Set default editor
 export EDITOR=vim
@@ -48,3 +56,11 @@ if [ -x /usr/bin/gnome-keyring-daemon ]
 then
     export $(/usr/bin/gnome-keyring-daemon --start)
 fi
+
+# Add nix to path if installed
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+	. "$HOME/.nix-profile/etc/profile.d/nix.sh"
+fi
+
+# Mark as loaded
+export DOTFILES_PROFILE_LOADED=1

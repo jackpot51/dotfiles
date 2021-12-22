@@ -6,6 +6,7 @@ per-window=false
 sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
 
 [org/gnome/desktop/interface]
+clock-show-weekday=true
 cursor-theme='Pop'
 document-font-name='IBM Plex Sans 11'
 enable-hot-corners=true
@@ -24,10 +25,13 @@ accel-profile='adaptive'
 
 [org/gnome/desktop/peripherals/touchpad]
 disable-while-typing=false
+natural-scroll=false
+tap-to-click=true
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
 disable-microphone=false
+report-technical-problems=false
 
 [org/gnome/desktop/screensaver]
 lock-delay=uint32 0
@@ -76,7 +80,9 @@ use-system-font=true
 wrap-mode='none'
 
 [org/gnome/mutter]
+attach-modal-dialogs=false
 dynamic-workspaces=true
+edge-tiling=false
 workspaces-only-on-primary=false
 
 [org/gnome/mutter/keybindings]
@@ -135,12 +141,19 @@ toggle-overview=['<Super>d']
 [org/gnome/shell/overrides]
 workspaces-only-on-primary=false
 
+[org/gnome/software]
+first-run=false
+
+[org/gnome/system/location]
+enabled=false
+
 [org/gnome/terminal/legacy]
 default-show-menubar=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 font='IBM Plex Mono 12'
 scrollback-unlimited=true
+use-system-font=false
 
 [org/gnome/tweaks]
 show-extensions-notice=false

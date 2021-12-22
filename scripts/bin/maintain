@@ -2,7 +2,24 @@
 
 set -ex
 
-sudo apt-get update
-sudo apt-get full-upgrade
-sudo apt-get autoremove --purge
-flatpak update
+if command -v apt-get
+then
+	sudo apt-get update
+	sudo apt-get full-upgrade
+	sudo apt-get autoremove --purge
+fi
+
+if command -v dnf
+then
+	sudo dnf upgrade
+fi
+
+if command -v rpm-ostree
+then
+	rpm-ostree upgrade
+fi
+
+if command -v flatpak
+then
+	flatpak update
+fi

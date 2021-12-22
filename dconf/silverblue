@@ -1,0 +1,12 @@
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>t'
+command='gnome-terminal'
+name='Launch Terminal'
+
+[org/gnome/shell]
+disabled-extensions=['background-logo@fedorahosted.org']
+enabled-extensions=['pop-shell@system76.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'cosmic-workspaces@system76.com', 'pop-cosmic@system76.com']
+welcome-dialog-last-shown-version='41.0'

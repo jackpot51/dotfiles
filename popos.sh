@@ -34,5 +34,4 @@ stow vifm
 stow vim
 stow x
 
-dconf reset -f /
-dconf load / < dconf
+dconf load / < dconf-pop

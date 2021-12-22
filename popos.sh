@@ -34,4 +34,4 @@ stow vifm
 stow vim
 stow x
 
-dconf load / < dconf/popos
+cat dconf/common dconf/popos | dconf load /

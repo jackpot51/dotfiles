@@ -1,0 +1,146 @@
+[ca/desrt/dconf-editor]
+show-warning=false
+
+[org/gnome/desktop/input-sources]
+per-window=false
+sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
+
+[org/gnome/desktop/interface]
+cursor-theme='Pop'
+document-font-name='IBM Plex Sans 11'
+enable-hot-corners=true
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='IBM Plex Sans 11'
+gtk-im-module='ibus'
+gtk-theme='Pop-dark'
+icon-theme='Pop'
+monospace-font-name='IBM Plex Mono 10'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='adaptive'
+
+[org/gnome/desktop/peripherals/touchpad]
+disable-while-typing=false
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+
+[org/gnome/desktop/screensaver]
+lock-delay=uint32 0
+
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
+[org/gnome/desktop/sound]
+theme-name='Pop'
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Super>q', '<Alt>F4']
+maximize=@as []
+minimize=['<Super>comma']
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-down=@as []
+move-to-workspace-up=@as []
+switch-to-workspace-down=['<Primary><Super>Down', '<Primary><Super>j']
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
+switch-to-workspace-up=['<Primary><Super>Up', '<Primary><Super>k']
+toggle-maximized=['<Super>m']
+unmaximize=@as []
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:close'
+resize-with-right-button=true
+titlebar-font='IBM Plex Sans Bold 11'
+
+[org/gnome/gedit/preferences/editor]
+scheme='pop-dark'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/meld]
+draw-spaces=['space', 'tab', 'newline', 'nbsp', 'leading', 'text', 'trailing']
+highlight-current-line=true
+highlight-syntax=true
+show-line-numbers=true
+style-scheme='pop-dark'
+use-system-font=true
+wrap-mode='none'
+
+[org/gnome/mutter]
+dynamic-workspaces=true
+workspaces-only-on-primary=false
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[org/gnome/mutter/wayland/keybindings]
+restore-shortcuts=@as []
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+email=['<Super>e']
+home=['<Super>f']
+rotate-video-lock-static=@as []
+screensaver=['<Super>Escape']
+www=['<Super>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>BackSpace'
+command='bash -c "gnome-slideshow-once ~/Pictures/Backgrounds"'
+name='Change Background'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell]
+app-picker-layout=@aa{sv} []
+disable-user-extensions=false
+favorite-apps=@as []
+
+[org/gnome/shell/extensions/dash-to-dock]
+dock-fixed=false
+dock-position='BOTTOM'
+manualhide=true
+
+[org/gnome/shell/extensions/ding]
+show-home=false
+show-trash=false
+show-volumes=false
+
+[org/gnome/shell/extensions/pop-shell]
+active-hint=true
+show-title=false
+tile-by-default=true
+
+[org/gnome/shell/extensions/user-theme]
+name='Pop'
+
+[org/gnome/shell/keybindings]
+open-application-menu=@as []
+toggle-message-tray=['<Super>v']
+toggle-overview=['<Super>d']
+
+[org/gnome/shell/overrides]
+workspaces-only-on-primary=false
+
+[org/gnome/terminal/legacy]
+default-show-menubar=false
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+font='IBM Plex Mono 12'
+scrollback-unlimited=true
+
+[org/gnome/tweaks]
+show-extensions-notice=false

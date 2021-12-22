@@ -3,8 +3,8 @@ custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybin
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Super>t'
-command='gnome-terminal'
-name='Launch Terminal'
+command='alacritty'
+name='Launch Alacritty'
 
 [org/gnome/shell]
 disabled-extensions=['background-logo@fedorahosted.org']

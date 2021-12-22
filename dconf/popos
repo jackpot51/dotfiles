@@ -55,9 +55,18 @@ monospace-font-name='IBM Plex Mono 10'
 show-battery-percentage=true
 toolkit-accessibility=false
 
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='adaptive'
+
 [org/gnome/desktop/peripherals/touchpad]
 disable-while-typing=false
 two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+
+[org/gnome/desktop/screensaver]
+lock-delay=uint32 0
 
 [org/gnome/desktop/session]
 idle-delay=uint32 0
@@ -141,6 +150,11 @@ favorite-apps=@as []
 dock-fixed=false
 dock-position='BOTTOM'
 manualhide=true
+
+[org/gnome/shell/extensions/ding]
+show-home=false
+show-trash=false
+show-volumes=false
 
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true

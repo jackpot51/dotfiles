@@ -94,4 +94,4 @@ stow scripts
 stow vim
 #stow x
 
-dconf load / < dconf-nixos
+dconf load / < dconf/nixos

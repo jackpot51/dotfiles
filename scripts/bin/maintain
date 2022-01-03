@@ -21,9 +21,8 @@ fi
 
 if command -v nix-env
 then
+	nix-channel --update
 	nix-env --upgrade
-	nix-env --delete-generations 7d
-	nix-collect-garbage
 fi
 
 if command -v flatpak

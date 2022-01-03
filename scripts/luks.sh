@@ -38,4 +38,4 @@ lvcreate -n "root" -l "100%FREE" "data"
 cryptsetup luksClose "/dev/mapper/data-root"
 cryptsetup luksClose "/dev/mapper/cryptdata"
 
-echo "Ready to install OS on ${DIST}"
+echo "Ready to install OS on ${DISK}"

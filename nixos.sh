@@ -11,6 +11,7 @@ nixos.git
 nixos.gnome.meld
 nixos.gnupg
 nixos.ibm-plex
+nixos.python3
 nixos.ripgrep
 nixos.stow
 nixos.vimHugeX

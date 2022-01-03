@@ -9,5 +9,6 @@
 /emulation/.var/app/org.DolphinEmu.dolphin-emu/config/dolphin-emu/Qt.ini
 /gtk/.config/gtk-3.0/bookmarks
 /ion/.config/ion/lwd
+/secret/*.asc
 /secret/*.tar
 /vifm/.config/vifm/vifminfo

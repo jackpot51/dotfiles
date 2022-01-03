@@ -23,6 +23,7 @@ if command -v nix-env
 then
 	nix-channel --update
 	nix-env --upgrade
+	nix-collect-garbage --delete-old
 fi
 
 if command -v flatpak

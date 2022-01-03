@@ -29,4 +29,5 @@ fi
 if command -v flatpak
 then
 	flatpak update
+	flatpak remove --unused
 fi

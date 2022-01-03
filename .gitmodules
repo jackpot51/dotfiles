@@ -1,24 +1,18 @@
-[submodule "i3-gnome"]
-	path = i3-gnome
-	url = https://github.com/jackpot51/i3-gnome.git
 [submodule "i3status-rust"]
 	path = i3status-rust
 	url = https://github.com/greshake/i3status-rust.git
 [submodule "vim/.vim/pack/vendor/start/nerdtree"]
-	path = vim/.vim/pack/vendor/start/nerdtree
+	path = files/.vim/pack/vendor/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	branch = master
-[submodule "ion-vim"]
-	path = ion-vim
-	url = https://gitlab.redox-os.org/redox-os/ion-vim.git
 [submodule "vim/.vim/pack/vendor/start/vim-orgmode"]
-	path = vim/.vim/pack/vendor/start/vim-orgmode
+	path = files/.vim/pack/vendor/start/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode
 [submodule "i3-auto-layout"]
 	path = i3-auto-layout
 	url = https://github.com/chmln/i3-auto-layout.git
 	branch = master
-[submodule "kde/.local/share/kwin/scripts/grid-tiling"]
-	path = kde/.local/share/kwin/scripts/grid-tiling
+[submodule "files/.local/share/kwin/scripts/grid-tiling"]
+	path = files/.local/share/kwin/scripts/grid-tiling
 	url = https://github.com/lingtjien/Grid-Tiling-Kwin
 	branch = master

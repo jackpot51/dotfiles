@@ -4,6 +4,7 @@ NIXPKGS=(
 nixpkgs.atom
 nixpkgs.glibcLocales
 nixpkgs.gnome.meld
+nixpkgs.ripgrep
 nixpkgs.stow
 )
 
@@ -11,25 +12,6 @@ ATOMPKGS=(
 auto-dark-mode
 ex-mode
 vim-mode-plus
-)
-
-STOWPKGS=(
-alacritty
-atom
-bash
-emulation
-feh
-git
-gnome
-gtk
-i3
-ion
-kde
-neovim
-scripts
-vifm
-vim
-x
 )
 
 set -e
@@ -62,7 +44,4 @@ do
 	fi
 done
 
-for pkg in "${STOWPKGS[@]}"
-do
-	stow --verbose "$pkg"
-done
+stow --verbose files

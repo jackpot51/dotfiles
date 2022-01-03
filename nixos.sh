@@ -78,21 +78,6 @@ pushd "${HOME}/Projects/pop"
 	popd
 popd
 
-stow alacritty
-stow atom
-stow bash
-#stow emulation
-#stow feh
-stow git
-#stow gtk
-#stow gnome
-#stow i3
-stow ion
-#stow kde
-stow neovim
-stow scripts
-#stow vifm
-stow vim
-#stow x
+stow files
 
 cat dconf/common dconf/nixos | dconf load /

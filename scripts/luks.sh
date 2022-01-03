@@ -20,7 +20,7 @@ set -ex
 # Create partitions
 parted "${DISK}" mklabel gpt
 parted "${DISK}" mkpart primary fat32 0% 512MiB
-parted "${DIST}" set 1 esp on
+parted "${DISK}" set 1 esp on
 parted "${DISK}" mkpart primary 512MiB 100%
 
 # Format LUKS partition

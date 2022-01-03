@@ -44,4 +44,4 @@ do
 	fi
 done
 
-stow --verbose files
+stow --no-folding --verbose files

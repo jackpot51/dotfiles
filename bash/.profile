@@ -62,5 +62,10 @@ if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
 	. "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
 
+# Add nix locale archive
+if [ -e "$HOME/.nix-profile/lib/locale/locale-archive" ]; then
+	export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
+fi
+
 # Mark as loaded
 export DOTFILES_PROFILE_LOADED=1

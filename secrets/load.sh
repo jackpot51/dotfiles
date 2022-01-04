@@ -2,12 +2,12 @@
 
 set -ex
 
-gpg --import secret/gpg.asc
+gpg --import secrets/gpg.asc
 tar \
 	--extract \
 	--verbose \
-	--file "secret/${HOSTNAME}.tar" \
+	--file "secrets/${HOSTNAME}.tar" \
 	--directory="$HOME"
 
-rm -f secret/gpg.asc
-rm -f "secret/${HOSTNAME}.tar"
+rm -f secrets/gpg.asc
+rm -f "secrets/${HOSTNAME}.tar"

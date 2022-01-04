@@ -12,6 +12,6 @@ then
 	sudo apt-get install vim-gtk3
 fi
 
-. common.sh
+. scripts/common.sh
 
 cat dconf/common dconf/popos | dconf load /

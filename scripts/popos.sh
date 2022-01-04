@@ -6,12 +6,17 @@ set -ex
 APTPKGS=(
 cifs-utils
 fonts-ibm-plex
-git-lfs
 kpartx
 kpartx-boot
 pop-desktop
 system76-driver
 )
+
+# NVIDIA driver, if required
+if [ -d /sys/module/nvidia ]
+then
+	APTPKGS+=(system76-driver-nvidia)
+fi
 
 # Applications
 APTPKGS+=(
@@ -37,6 +42,7 @@ cmake
 devmem2
 devscripts
 flashrom
+git-lfs
 gnat
 libgtk-3-dev
 libsdl2-dev
@@ -51,12 +57,6 @@ sassc
 sdcc
 software-properties-common
 )
-
-# NVIDIA driver, if required
-if [ -d /sys/module/nvidia ]
-then
-	APTPKGS+=(system76-driver-nvidia)
-fi
 
 LANGUAGES=(
 en_US

@@ -22,8 +22,10 @@ fi
 APTPKGS+=(
 iotop
 kicad
+meld
 nethogs
 powertop
+qemu-system-x86
 steam
 stress-ng
 system76-keyboard-configurator
@@ -34,6 +36,8 @@ vim-gtk3
 APTPKGS+=(
 apt-file
 apt-show-versions
+automake
+autopoint
 avr-libc
 avrdude
 ccache
@@ -42,20 +46,27 @@ cmake
 devmem2
 devscripts
 flashrom
+genisoimage
 git-lfs
 gnat
+gperf
+libfuse-dev
+libgmp-dev
 libgtk-3-dev
 libsdl2-dev
 libssl-dev
 msr-tools
 mtools
 nasm
+po4a
 ppa-purge
 python-is-python3
 python2
 sassc
 sdcc
 software-properties-common
+syslinux-utils
+texinfo
 )
 
 LANGUAGES=(
@@ -64,7 +75,11 @@ zh_CN
 )
 
 # Mark all packages as automatically installed
-sudo apt-mark auto $(apt-mark showmanual)
+manual="$(apt-mark showmanual)"
+if [ -n "${manual}" ]
+then
+	sudo apt-mark auto $manual
+fi
 
 # Mark desired packages as manually installed
 sudo apt-get install "${APTPKGS[@]}"

@@ -3,6 +3,7 @@
 NIXPKGS=(
 nixpkgs.atom
 nixpkgs.glibcLocales
+nixpkgs.gnome.ghex
 nixpkgs.gnome.meld
 nixpkgs.ripgrep
 nixpkgs.stow

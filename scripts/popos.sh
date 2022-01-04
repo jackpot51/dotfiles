@@ -2,20 +2,61 @@
 
 set -ex
 
+# Required packages
 APTPKGS=(
 cifs-utils
 fonts-ibm-plex
 git-lfs
-iotop
 kpartx
 kpartx-boot
-nethogs
 pop-desktop
-software-properties-common
-steam
 system76-driver
+)
+
+# Applications
+APTPKGS+=(
+iotop
+kicad
+nethogs
+powertop
+steam
+stress-ng
+system76-keyboard-configurator
 vim-gtk3
 )
+
+# Development tools
+APTPKGS+=(
+apt-file
+apt-show-versions
+avr-libc
+avrdude
+ccache
+clang
+cmake
+devmem2
+devscripts
+flashrom
+gnat
+libgtk-3-dev
+libsdl2-dev
+libssl-dev
+msr-tools
+mtools
+nasm
+ppa-purge
+python-is-python3
+python2
+sassc
+sdcc
+software-properties-common
+)
+
+# NVIDIA driver, if required
+if [ -d /sys/module/nvidia ]
+then
+	APTPKGS+=(system76-driver-nvidia)
+fi
 
 LANGUAGES=(
 en_US

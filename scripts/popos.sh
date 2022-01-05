@@ -29,7 +29,9 @@ qemu-system-x86
 steam
 stress-ng
 system76-keyboard-configurator
+transmission-gtk
 vim-gtk3
+virt-manager
 )
 
 # Development tools
@@ -43,6 +45,8 @@ avrdude
 ccache
 clang
 cmake
+debhelper
+debootstrap
 devmem2
 devscripts
 flashrom
@@ -58,6 +62,7 @@ libssl-dev
 msr-tools
 mtools
 nasm
+ostree
 po4a
 ppa-purge
 python-is-python3
@@ -66,6 +71,7 @@ sassc
 sdcc
 software-properties-common
 syslinux-utils
+systemd-container
 texinfo
 )
 
@@ -94,3 +100,5 @@ done
 . scripts/common.sh
 
 cat dconf/common dconf/popos | dconf load /
+
+echo "Setup complete. Reboot if this is the first time."

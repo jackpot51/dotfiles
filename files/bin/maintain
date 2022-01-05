@@ -19,6 +19,11 @@ then
 	rpm-ostree upgrade
 fi
 
+if command -v nixos-rebuild
+then
+	sudo nixos-rebuild switch --upgrade
+fi
+
 if command -v nix-env
 then
 	nix-channel --update

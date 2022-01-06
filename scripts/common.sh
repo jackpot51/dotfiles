@@ -16,25 +16,32 @@ vim-mode-plus
 
 set -e
 
-if [ ! -f "$HOME/.cargo/env" ]
-then
-	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- \
-		--default-toolchain none \
-		--no-modify-path \
-		-y
-fi
-. "$HOME/.cargo/env"
+source /etc/os-release
 
-if [ ! -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]
+if [ "${ID}" == "nixos" ]
 then
-	curl -L https://nixos.org/nix/install | sh -s -- \
-		--no-daemon \
-		--no-modify-profile
-fi
-. "$HOME/.nix-profile/etc/profile.d/nix.sh"
-export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
+	echo "Using NixOS, skipping rustup and Nix installation"
+else
+	if [ ! -f "$HOME/.cargo/env" ]
+	then
+		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- \
+			--default-toolchain none \
+			--no-modify-path \
+			-y
+	fi
+	. "$HOME/.cargo/env"
 
-nix-env --install --attr "${NIXPKGS[@]}"
+	if [ ! -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]
+	then
+		curl -L https://nixos.org/nix/install | sh -s -- \
+			--no-daemon \
+			--no-modify-profile
+	fi
+	. "$HOME/.nix-profile/etc/profile.d/nix.sh"
+	export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
+
+	nix-env --install --attr "${NIXPKGS[@]}"
+fi
 
 for pkg in "${ATOMPKGS[@]}"
 do

@@ -13,19 +13,12 @@ nixos.gnupg
 nixos.ibm-plex
 nixos.python3
 nixos.ripgrep
+nixos.rustup
 nixos.stow
 nixos.vimHugeX
 )
 
 nix-env --install --attr "${NIXPKGS[@]}"
-
-ATOMPKGS=(
-auto-dark-mode
-ex-mode
-vim-mode-plus
-)
-
-apm install "${ATOMPKGS[@]}"
 
 if [ ! -d "${HOME}/Projects/pop" ]
 then
@@ -65,8 +58,9 @@ pushd "${HOME}/Projects/pop"
 
 	./scripts/clone launcher
 	pushd launcher
+		echo "1.56.1" > rust-toolchain
 		nix-shell \
-			--packages cargo pkgconfig gtk3 openssl.dev \
+			--packages pkgconfig gtk3 openssl.dev \
 			--run "make && make install"
 	popd
 
@@ -78,6 +72,8 @@ pushd "${HOME}/Projects/pop"
 	popd
 popd
 
-stow files
+. scripts/common.sh
 
 cat dconf/common dconf/nixos | dconf load /
+
+echo "Setup complete. Reboot if this is the first time."

@@ -1,0 +1,425 @@
+{
+  "model": "system76/oryp7",
+  "version": 1,
+  "map": {
+    "K1C": [
+      "EQUALS",
+      "EQUALS"
+    ],
+    "K1D": [
+      "BKSP",
+      "DEL"
+    ],
+    "K3B": [
+      "QUOTE",
+      "DEL"
+    ],
+    "K0G": [
+      "HOME",
+      "HOME"
+    ],
+    "K37": [
+      "J",
+      "DOWN"
+    ],
+    "K3F": [
+      "NUM_6",
+      "NUM_6"
+    ],
+    "K06": [
+      "F6",
+      "VOLUME_UP"
+    ],
+    "K48": [
+      "COMMA",
+      "COMMA"
+    ],
+    "K14": [
+      "4",
+      "4"
+    ],
+    "K36": [
+      "H",
+      "LEFT"
+    ],
+    "K4F": [
+      "NUM_3",
+      "NUM_3"
+    ],
+    "K15": [
+      "5",
+      "5"
+    ],
+    "K0D": [
+      "PRINT_SCREEN",
+      "PRINT_SCREEN"
+    ],
+    "K0J": [
+      "PGDN",
+      "PGDN"
+    ],
+    "K23": [
+      "E",
+      "E"
+    ],
+    "K39": [
+      "L",
+      "RIGHT"
+    ],
+    "K56": [
+      "ESC",
+      "ESC"
+    ],
+    "K26": [
+      "Y",
+      "Y"
+    ],
+    "K2A": [
+      "P",
+      "P"
+    ],
+    "K3C": [
+      "ENTER",
+      "ENTER"
+    ],
+    "K31": [
+      "A",
+      "A"
+    ],
+    "K02": [
+      "F2",
+      "DISPLAY_TOGGLE"
+    ],
+    "K13": [
+      "3",
+      "3"
+    ],
+    "K1F": [
+      "NUM_SLASH",
+      "KBD_COLOR"
+    ],
+    "K0E": [
+      "INSERT",
+      "INSERT"
+    ],
+    "K17": [
+      "7",
+      "7"
+    ],
+    "K1H": [
+      "NUM_MINUS",
+      "KBD_DOWN"
+    ],
+    "K34": [
+      "F",
+      "F"
+    ],
+    "K28": [
+      "I",
+      "HOME"
+    ],
+    "K00": [
+      "ESC",
+      "ESC"
+    ],
+    "K41": [
+      "Z",
+      "Z"
+    ],
+    "K07": [
+      "F7",
+      "DISPLAY_MODE"
+    ],
+    "K2F": [
+      "NUM_8",
+      "NUM_8"
+    ],
+    "K2B": [
+      "BRACE_OPEN",
+      "BRACE_OPEN"
+    ],
+    "K44": [
+      "V",
+      "V"
+    ],
+    "K1G": [
+      "NUM_ASTERISK",
+      "KBD_TOGGLE"
+    ],
+    "K3E": [
+      "NUM_5",
+      "NUM_5"
+    ],
+    "K46": [
+      "N",
+      "END"
+    ],
+    "K05": [
+      "F5",
+      "VOLUME_DOWN"
+    ],
+    "K4D": [
+      "NUM_1",
+      "NUM_1"
+    ],
+    "K0H": [
+      "END",
+      "END"
+    ],
+    "K20": [
+      "TAB",
+      "TAB"
+    ],
+    "K1E": [
+      "NUM_LOCK",
+      "NUM_LOCK"
+    ],
+    "K30": [
+      "FN",
+      "FN"
+    ],
+    "K2H": [
+      "NUM_PLUS",
+      "KBD_UP"
+    ],
+    "K3A": [
+      "SEMICOLON",
+      "BKSP"
+    ],
+    "K24": [
+      "R",
+      "R"
+    ],
+    "K50": [
+      "LEFT_CTRL",
+      "LEFT_CTRL"
+    ],
+    "K42": [
+      "X",
+      "X"
+    ],
+    "K54": [
+      "SPACE",
+      "ENTER"
+    ],
+    "K5B": [
+      "NUM_0",
+      "NUM_0"
+    ],
+    "K29": [
+      "O",
+      "PGDN"
+    ],
+    "K08": [
+      "F8",
+      "BRIGHTNESS_DOWN"
+    ],
+    "K01": [
+      "F1",
+      "TOUCHPAD"
+    ],
+    "K12": [
+      "2",
+      "2"
+    ],
+    "K4G": [
+      "NUM_ENTER",
+      "NUM_ENTER"
+    ],
+    "K0A": [
+      "F10",
+      "CAMERA_TOGGLE"
+    ],
+    "K5A": [
+      "RIGHT",
+      "RIGHT"
+    ],
+    "K55": [
+      "BKSP",
+      "DEL"
+    ],
+    "K1B": [
+      "MINUS",
+      "MINUS"
+    ],
+    "K58": [
+      "LEFT",
+      "LEFT"
+    ],
+    "K1A": [
+      "0",
+      "0"
+    ],
+    "K0C": [
+      "F12",
+      "SUSPEND"
+    ],
+    "K2D": [
+      "BACKSLASH",
+      "BACKSLASH"
+    ],
+    "K2C": [
+      "BRACE_CLOSE",
+      "BRACE_CLOSE"
+    ],
+    "K43": [
+      "C",
+      "C"
+    ],
+    "K40": [
+      "LEFT_SHIFT",
+      "LEFT_SHIFT"
+    ],
+    "K53": [
+      "LEFT_SUPER",
+      "LEFT_SUPER"
+    ],
+    "K09": [
+      "F9",
+      "BRIGHTNESS_UP"
+    ],
+    "K27": [
+      "U",
+      "PGUP"
+    ],
+    "K4C": [
+      "UP",
+      "UP"
+    ],
+    "K19": [
+      "9",
+      "9"
+    ],
+    "K03": [
+      "F3",
+      "MUTE"
+    ],
+    "K4B": [
+      "RIGHT_SHIFT",
+      "RIGHT_SHIFT"
+    ],
+    "K47": [
+      "M",
+      "M"
+    ],
+    "K4A": [
+      "SLASH",
+      "SLASH"
+    ],
+    "K16": [
+      "6",
+      "6"
+    ],
+    "K33": [
+      "D",
+      "D"
+    ],
+    "K3D": [
+      "NUM_4",
+      "NUM_4"
+    ],
+    "K5C": [
+      "NUM_PERIOD",
+      "NUM_PERIOD"
+    ],
+    "K2E": [
+      "NUM_7",
+      "NUM_7"
+    ],
+    "K04": [
+      "F4",
+      "F4"
+    ],
+    "K18": [
+      "8",
+      "8"
+    ],
+    "K0B": [
+      "F11",
+      "AIRPLANE_MODE"
+    ],
+    "K0I": [
+      "PGUP",
+      "PGUP"
+    ],
+    "K10": [
+      "TICK",
+      "PLAY_PAUSE"
+    ],
+    "K21": [
+      "Q",
+      "Q"
+    ],
+    "K22": [
+      "W",
+      "W"
+    ],
+    "K25": [
+      "T",
+      "T"
+    ],
+    "K2G": [
+      "NUM_9",
+      "NUM_9"
+    ],
+    "K11": [
+      "1",
+      "FAN_TOGGLE"
+    ],
+    "K32": [
+      "S",
+      "S"
+    ],
+    "K35": [
+      "G",
+      "G"
+    ],
+    "K45": [
+      "B",
+      "B"
+    ],
+    "K49": [
+      "PERIOD",
+      "PERIOD"
+    ],
+    "K4E": [
+      "NUM_2",
+      "NUM_2"
+    ],
+    "K51": [
+      "FN",
+      "FN"
+    ],
+    "K52": [
+      "LEFT_ALT",
+      "LEFT_ALT"
+    ],
+    "K57": [
+      "RIGHT_CTRL",
+      "RIGHT_CTRL"
+    ],
+    "K59": [
+      "DOWN",
+      "DOWN"
+    ],
+    "K0F": [
+      "DEL",
+      "DEL"
+    ],
+    "K38": [
+      "K",
+      "UP"
+    ]
+  },
+  "key_leds": {},
+  "layers": [
+    {
+      "mode": null,
+      "brightness": 0,
+      "color": [
+        0,
+        0
+      ]
+    }
+  ]
+}

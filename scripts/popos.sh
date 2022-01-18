@@ -20,8 +20,11 @@ fi
 
 # Applications
 APTPKGS+=(
+gimp
+inkscape
 iotop
 kicad
+lutris
 meld
 nethogs
 powertop
@@ -29,9 +32,11 @@ qemu-system-x86
 steam
 stress-ng
 system76-keyboard-configurator
+tio
 transmission-gtk
 vim-gtk3
 virt-manager
+yubikey-manager
 )
 
 # Development tools
@@ -45,6 +50,7 @@ avrdude
 ccache
 clang
 cmake
+d52
 debhelper
 debootstrap
 devmem2
@@ -54,9 +60,11 @@ genisoimage
 git-lfs
 gnat
 gperf
+kernel-wedge
 libfuse-dev
 libgmp-dev
 libgtk-3-dev
+libgtk-4-dev
 libsdl2-dev
 libssl-dev
 msr-tools
@@ -73,6 +81,7 @@ software-properties-common
 syslinux-utils
 systemd-container
 texinfo
+ubuntu-dev-tools
 )
 
 LANGUAGES=(

@@ -3,6 +3,9 @@
     {
       "class": "pop-shell-example",
       "title": "pop-shell-example"
+    },
+    {
+      "class": "Qemu-system-x86_64"
     }
   ],
   "skiptaskbarhidden": [],

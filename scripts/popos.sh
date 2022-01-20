@@ -65,6 +65,7 @@ libfuse-dev
 libgmp-dev
 libgtk-3-dev
 libgtk-4-dev
+libhidapi-dev
 libsdl2-dev
 libssl-dev
 msr-tools

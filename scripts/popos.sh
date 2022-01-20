@@ -29,6 +29,7 @@ meld
 nethogs
 powertop
 qemu-system-x86
+scdaemon
 steam
 stress-ng
 system76-keyboard-configurator
@@ -38,6 +39,12 @@ vim-gtk3
 virt-manager
 yubikey-manager
 )
+
+# Keep zoom if it is installed
+if dpkg-query -s zoom &> /dev/null
+then
+	APTPKGS+=(zoom)
+fi
 
 # Development tools
 APTPKGS+=(

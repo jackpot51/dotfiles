@@ -6,6 +6,12 @@
     },
     {
       "class": "Qemu-system-x86_64"
+    },
+    {
+      "class": "dosbox-x"
+    },
+    {
+      "class": "Qemu-system-i386"
     }
   ],
   "skiptaskbarhidden": [],

@@ -14,6 +14,14 @@ ex-mode
 vim-mode-plus
 )
 
+STOWFORCE=(
+.bashrc
+.config/pop-shell/config.json
+.profile
+)
+
+GPG_KEY="87F211AF2BE4C2FE"
+
 set -e
 
 source /etc/os-release
@@ -51,4 +59,13 @@ do
 	fi
 done
 
+for file in "${STOWFORCE[@]}"
+do
+	if [ -f "${HOME}/${file}" ]
+	then
+		rm -v "${HOME}/${file}"
+	fi
+done
 stow --no-folding --verbose files
+
+gpg --recv-key "${GPG_KEY}"

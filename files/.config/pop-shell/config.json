@@ -12,6 +12,9 @@
     },
     {
       "class": "Qemu-system-i386"
+    },
+    {
+      "class": "86Box"
     }
   ],
   "skiptaskbarhidden": [],

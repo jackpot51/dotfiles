@@ -10,6 +10,7 @@ nixpkgs.stow
 
 FLATPAKS=(
 com.dosbox_x.DOSBox-X
+com.github.tchx84.Flatseal
 org.DolphinEmu.dolphin-emu
 org.flycast.Flycast
 )
@@ -57,7 +58,7 @@ else
 	nix-env --install --attr "${NIXPKGS[@]}"
 fi
 
-flatpak install "${FLATPAKS[@]}"
+flatpak install flathub "${FLATPAKS[@]}"
 
 for pkg in "${ATOMPKGS[@]}"
 do

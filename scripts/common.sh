@@ -8,6 +8,12 @@ nixpkgs.ripgrep
 nixpkgs.stow
 )
 
+FLATPAKS=(
+com.dosbox_x.DOSBox-X
+org.DolphinEmu.dolphin-emu
+org.flycast.Flycast
+)
+
 ATOMPKGS=(
 auto-dark-mode
 ex-mode
@@ -50,6 +56,8 @@ else
 
 	nix-env --install --attr "${NIXPKGS[@]}"
 fi
+
+flatpak install "${FLATPAKS[@]}"
 
 for pkg in "${ATOMPKGS[@]}"
 do

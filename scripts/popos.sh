@@ -25,6 +25,7 @@ inkscape
 iotop
 kicad
 lutris
+mednafe
 meld
 nethogs
 powertop

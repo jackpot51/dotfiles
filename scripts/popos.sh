@@ -84,6 +84,7 @@ ppa-purge
 python-is-python3
 python2
 sassc
+sbuild
 sdcc
 software-properties-common
 syslinux-utils

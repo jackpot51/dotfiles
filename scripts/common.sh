@@ -71,7 +71,7 @@ done
 
 for file in "${STOWFORCE[@]}"
 do
-	if [ -f "${HOME}/${file}" ]
+	if [ -f "${HOME}/${file}" -a ! -L "${HOME}/${file}" ]
 	then
 		rm -v "${HOME}/${file}"
 	fi

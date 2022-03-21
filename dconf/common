@@ -108,6 +108,7 @@ command='bash -c "gnome-slideshow-once ~/Pictures/Backgrounds"'
 name='Change Background'
 
 [org/gnome/settings-daemon/plugins/power]
+idle-dim=false
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]

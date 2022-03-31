@@ -8,7 +8,16 @@ then
     exit 1
 fi
 
+case "$(dconf read "/org/gnome/desktop/interface/color-scheme")" in
+	"'prefer-dark'")
+		KEY="/org/gnome/desktop/background/picture-uri-dark"
+		;;
+	*)
+		KEY="/org/gnome/desktop/background/picture-uri"
+		;;
+esac
+
 FOLDER="$(realpath "$1")"
 PICTURES=("${FOLDER}"/*)
 PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
-dconf write "/org/gnome/desktop/background/picture-uri" "'file://${PICTURE}'"
+dconf write "${KEY}" "'file://${PICTURE}'"

@@ -18,6 +18,9 @@
     },
     {
       "class": "Xmag"
+    },
+    {
+      "class": "Kvm"
     }
   ],
   "skiptaskbarhidden": [],

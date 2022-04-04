@@ -14,6 +14,11 @@ then
 	sudo dnf upgrade
 fi
 
+if command -v pacman
+then
+	sudo pacman -Syu
+fi
+
 if command -v rpm-ostree
 then
 	rpm-ostree upgrade

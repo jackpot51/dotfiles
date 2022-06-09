@@ -16,3 +16,7 @@
 	path = files/.local/share/kwin/scripts/grid-tiling
 	url = https://github.com/lingtjien/Grid-Tiling-Kwin
 	branch = master
+[submodule "files/.vim/pack/vendor/start/editorconfig-vim"]
+	path = files/.vim/pack/vendor/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+	branch = master

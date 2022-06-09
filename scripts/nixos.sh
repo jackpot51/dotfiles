@@ -8,9 +8,9 @@ nixos.atom
 nixos.cifs-utils
 nixos.firefox
 nixos.git
-nixos.gnome.meld
 nixos.gnupg
 nixos.ibm-plex
+nixos.meld
 nixos.python3
 nixos.ripgrep
 nixos.rustup
@@ -19,6 +19,8 @@ nixos.vimHugeX
 )
 
 nix-env --install --attr "${NIXPKGS[@]}"
+
+flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
 
 if [ ! -d "${HOME}/Projects/pop" ]
 then
@@ -51,17 +53,16 @@ pushd "${HOME}/Projects/pop"
 	./scripts/clone icon-theme
 	pushd icon-theme
 		rm -rf build
-		nix-shell \
-			--packages meson ninja \
+		echo nix-shell \
+			--packages glib.dev meson ninja \
 			--run "meson build --prefix=${HOME}/.local && ninja -C build install"
 	popd
 
 	./scripts/clone launcher
 	pushd launcher
-		echo "1.56.1" > rust-toolchain
 		nix-shell \
-			--packages pkgconfig gtk3 openssl.dev \
-			--run "make && make install"
+			--packages gtk3 just openssl.dev pkgconfig \
+			--run "just && just install"
 	popd
 
 	./scripts/clone shell

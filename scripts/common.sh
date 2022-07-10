@@ -11,6 +11,7 @@ nixpkgs.stow
 FLATPAKS=(
 com.dosbox_x.DOSBox-X
 com.github.tchx84.Flatseal
+org.libretro.RetroArch
 org.DolphinEmu.dolphin-emu
 org.flycast.Flycast
 org.yuzu_emu.yuzu

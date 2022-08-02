@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 NIXPKGS=(
-nixpkgs.atom
 nixpkgs.glibcLocales
 nixpkgs.gnome.ghex
 nixpkgs.ripgrep
@@ -15,12 +14,6 @@ org.libretro.RetroArch
 org.DolphinEmu.dolphin-emu
 org.flycast.Flycast
 org.yuzu_emu.yuzu
-)
-
-ATOMPKGS=(
-auto-dark-mode
-ex-mode
-vim-mode-plus
 )
 
 STOWFORCE=(
@@ -61,14 +54,6 @@ else
 fi
 
 flatpak install flathub "${FLATPAKS[@]}"
-
-for pkg in "${ATOMPKGS[@]}"
-do
-	if [ ! -d "$HOME/.atom/packages/$pkg" ]
-	then
-		apm install "$pkg"
-	fi
-done
 
 for file in "${STOWFORCE[@]}"
 do

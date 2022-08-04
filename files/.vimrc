@@ -17,3 +17,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 packloadall
 silent! helptags ALL
+call plug#begin()
+Plug 'jremmen/vim-ripgrep'
+call plug#end()

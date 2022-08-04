@@ -20,3 +20,7 @@
 	path = files/.vim/pack/vendor/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
 	branch = master
+[submodule "files/.vim/plugged/vim-ripgrep"]
+	path = files/.vim/plugged/vim-ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
+	branch = master

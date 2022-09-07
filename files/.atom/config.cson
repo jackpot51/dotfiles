@@ -1,0 +1,13 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "IBM Plex Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    showInvisibles: true
+    tabLength: 4
+  "tree-view": {}
+  welcome:
+    showOnStartup: false

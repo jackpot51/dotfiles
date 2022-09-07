@@ -20,6 +20,7 @@ fi
 
 # Applications
 APTPKGS+=(
+atom
 gimp
 inkscape
 iotop

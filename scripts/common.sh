@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 NIXPKGS=(
-nixpkgs.atom
 nixpkgs.glibcLocales
 nixpkgs.gnome.ghex
 nixpkgs.ripgrep

@@ -61,13 +61,16 @@ fi
 
 flatpak install flathub "${FLATPAKS[@]}"
 
-for pkg in "${ATOMPKGS[@]}"
-do
-	if [ ! -d "$HOME/.atom/packages/$pkg" ]
-	then
-		apm install "$pkg"
-	fi
-done
+if command -v apm
+then
+	for pkg in "${ATOMPKGS[@]}"
+	do
+		if [ ! -d "$HOME/.atom/packages/$pkg" ]
+		then
+			apm install "$pkg"
+		fi
+	done
+fi
 
 for file in "${STOWFORCE[@]}"
 do

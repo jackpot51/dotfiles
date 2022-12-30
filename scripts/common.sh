@@ -67,7 +67,7 @@ then
 	do
 		if [ ! -d "$HOME/.atom/packages/$pkg" ]
 		then
-			apm install "$pkg"
+			echo "ATOM IS DEAD, NOT DOING: apm install \"$pkg\""
 		fi
 	done
 fi

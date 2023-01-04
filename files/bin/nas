@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SRC="//192.168.0.1/G"
+SRC="//jeremy-server.local/share"
 DST="${HOME}/nas"
 
 set -ex

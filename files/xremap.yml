@@ -1,0 +1,16 @@
+modmap:
+  - remap:
+      Alt_L: Super_L
+      Super_L: Alt_L
+virtual_modifiers:
+  - CapsLock
+keymap:
+  - remap:
+      CapsLock-h: Left
+      CapsLock-j: Down
+      CapsLock-k: Up
+      CapsLock-l: Right
+      CapsLock-i: Home
+      CapsLock-n: End
+      CapsLock-u: PageUp
+      CapsLock-o: PageDown

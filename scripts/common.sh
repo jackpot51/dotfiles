@@ -41,7 +41,7 @@ else
 	if [ ! -f "$HOME/.cargo/env" ]
 	then
 		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- \
-			--default-toolchain none \
+			--default-toolchain stable \
 			--no-modify-path \
 			-y
 	fi

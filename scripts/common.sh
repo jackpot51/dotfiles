@@ -10,16 +10,11 @@ nixpkgs.stow
 FLATPAKS=(
 com.dosbox_x.DOSBox-X
 com.github.tchx84.Flatseal
+dev.pulsar_edit.Pulsar
 org.libretro.RetroArch
 org.DolphinEmu.dolphin-emu
 org.flycast.Flycast
 org.yuzu_emu.yuzu
-)
-
-ATOMPKGS=(
-auto-dark-mode
-ex-mode
-vim-mode-plus
 )
 
 STOWFORCE=(
@@ -60,17 +55,6 @@ else
 fi
 
 flatpak install flathub "${FLATPAKS[@]}"
-
-if command -v apm
-then
-	for pkg in "${ATOMPKGS[@]}"
-	do
-		if [ ! -d "$HOME/.atom/packages/$pkg" ]
-		then
-			echo "ATOM IS DEAD, NOT DOING: apm install \"$pkg\""
-		fi
-	done
-fi
 
 for file in "${STOWFORCE[@]}"
 do

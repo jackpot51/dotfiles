@@ -4,7 +4,6 @@ set -ex
 
 NIXPKGS=(
 nixos.alacritty
-nixos.atom
 nixos.cifs-utils
 nixos.firefox
 nixos.git

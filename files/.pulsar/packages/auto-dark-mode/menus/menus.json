@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Dark Mode",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "auto-dark-mode:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

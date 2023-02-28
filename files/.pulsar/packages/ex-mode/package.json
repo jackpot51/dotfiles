@@ -1,0 +1,74 @@
+{
+  "_from": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball",
+  "_id": "ex-mode@0.18.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Km+cpRESs418imutSSoL/qinkgsMsnJOwgDaSNgLBNR7KeFFQcpuKoSbzeQesG/l7F71+aSRGfhKbvF9656IyQ==",
+  "_location": "/ex-mode",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball",
+    "rawSpec": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball",
+    "saveSpec": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball",
+    "fetchSpec": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball",
+  "_shasum": "4ba7dc050b13e8fb073d5feb10d3a2bdd1f87541",
+  "_spec": "https://api.pulsar-edit.dev/api/packages/ex-mode/versions/0.18.0/tarball",
+  "_where": "/var/tmp/apm-install-dir-2023127-287-13xz1an.b54tk",
+  "activationCommands": {
+    "atom-workspace": "ex-mode:open"
+  },
+  "bugs": {
+    "url": "https://github.com/lloeki/ex-mode/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "vim-mode": {
+      "versions": {
+        "^0.1.0": "consumeVim"
+      }
+    },
+    "vim-mode-plus": {
+      "versions": {
+        "^0.1.0": "consumeVimModePlus"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.4",
+    "event-kit": "^0.7.2",
+    "fs-plus": "^2.2.8",
+    "space-pen": "^5.1.1",
+    "underscore-plus": "1.x"
+  },
+  "deprecated": false,
+  "description": "Ex for Atom's vim-mode",
+  "devDependencies": {
+    "node-uuid": "^1.4.2"
+  },
+  "engines": {
+    "atom": ">=0.200.0 <2.0.0"
+  },
+  "homepage": "https://github.com/lloeki/ex-mode#readme",
+  "license": "MIT",
+  "main": "./lib/ex-mode",
+  "name": "ex-mode",
+  "providedServices": {
+    "ex-mode": {
+      "description": "Ex commands",
+      "versions": {
+        "0.20.0": "provideEx"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lloeki/ex-mode.git"
+  },
+  "version": "0.18.0"
+}

@@ -10,8 +10,6 @@ nixpkgs.stow
 FLATPAKS=(
 com.dosbox_x.DOSBox-X
 com.github.tchx84.Flatseal
-dev.pulsar_edit.Pulsar
-org.libretro.RetroArch
 org.DolphinEmu.dolphin-emu
 org.flycast.Flycast
 org.yuzu_emu.yuzu

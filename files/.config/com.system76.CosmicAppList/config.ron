@@ -1,0 +1,7 @@
+(
+    filter_top_levels: None,
+    favorites: [
+        "firefox",
+        "org.gnome.Terminal",
+    ],
+)

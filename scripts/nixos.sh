@@ -72,8 +72,8 @@ pushd "${HOME}/Projects/pop"
 	popd
 popd
 
-. scripts/common.sh
-
 cat dconf/common dconf/nixos | dconf load /
+
+. scripts/common.sh
 
 echo "Setup complete. Reboot if this is the first time."

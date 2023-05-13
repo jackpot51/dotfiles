@@ -116,8 +116,8 @@ do
 		$(check-language-support --show-installed --language="$language")
 done
 
-. scripts/common.sh
-
 cat dconf/common dconf/popos | dconf load /
+
+. scripts/common.sh
 
 echo "Setup complete. Reboot if this is the first time."

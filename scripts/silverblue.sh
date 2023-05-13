@@ -17,6 +17,6 @@ then
 	rpm-ostree install xprop
 fi
 
-toolbox run stow files
-
 cat dconf/common dconf/silverblue | dconf load /
+
+toolbox run stow files

@@ -24,3 +24,7 @@
 	path = files/.vim/plugged/vim-ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
 	branch = master
+[submodule "evremap"]
+	path = evremap
+	url = https://github.com/jackpot51/evremap.git
+	branch = master

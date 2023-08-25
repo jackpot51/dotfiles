@@ -596,21 +596,10 @@
   "layers": [
     {
       "mode": [
-        0,
+        14,
         127
       ],
-      "brightness": 0,
-      "color": [
-        128,
-        255
-      ]
-    },
-    {
-      "mode": [
-        13,
-        127
-      ],
-      "brightness": 0,
+      "brightness": 176,
       "color": [
         142,
         255
@@ -618,10 +607,10 @@
     },
     {
       "mode": [
-        13,
+        14,
         127
       ],
-      "brightness": 0,
+      "brightness": 176,
       "color": [
         142,
         255
@@ -629,10 +618,21 @@
     },
     {
       "mode": [
-        13,
+        14,
         127
       ],
-      "brightness": 0,
+      "brightness": 176,
+      "color": [
+        142,
+        255
+      ]
+    },
+    {
+      "mode": [
+        14,
+        127
+      ],
+      "brightness": 176,
       "color": [
         142,
         255

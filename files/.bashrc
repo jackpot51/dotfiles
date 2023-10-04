@@ -127,7 +127,11 @@ bind 'set vi-ins-mode-string +'
 bind 'set vi-cmd-mode-string :'
 bind -m vi-insert "\C-l":clear-screen
 
+# Enable automatic CD
 shopt -s autocd
+
+# Set TTY for GPG pinentry
+export GPG_TTY="$(tty)"
 
 for transset in transset transset-df
 do

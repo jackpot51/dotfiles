@@ -5,6 +5,7 @@ set -ex
 # Required packages
 APTPKGS=(
 cifs-utils
+cosmic-session
 fonts-ibm-plex
 kpartx
 kpartx-boot

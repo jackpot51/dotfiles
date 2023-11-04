@@ -18,6 +18,7 @@ org.yuzu_emu.yuzu
 STOWFORCE=(
 .bashrc
 .config/pop-shell/config.json
+.gitconfig
 .profile
 )
 

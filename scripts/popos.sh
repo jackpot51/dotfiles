@@ -69,6 +69,7 @@ genisoimage
 git-lfs
 gnat
 gperf
+just
 kernel-wedge
 libfuse-dev
 libgmp-dev
@@ -85,6 +86,7 @@ po4a
 ppa-purge
 python-is-python3
 python2
+rust-all
 sassc
 sbuild
 sdcc

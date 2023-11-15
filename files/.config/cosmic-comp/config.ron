@@ -57,23 +57,23 @@
 
         (modifiers: [Super], key: "o"): ToggleOrientation,
         (modifiers: [Super], key: "s"): ToggleStacking,
-        
         (modifiers: [Super], key: "y"): ToggleTiling,
         (modifiers: [Super], key: "g"): ToggleWindowFloating,
-        (modifiers: [Super], key: "s"): ToggleStacking,
-        
-        (modifiers: [Super], key: "m"): Maximize,
+        (modifiers: [Super], key: "x"): SwapWindow,
 
-        //TODO: ability to select default web browser
-        (modifiers: [Super], key: "b"): Spawn("firefox"),
-        //TODO: ability to select default file browser
-        (modifiers: [Super], key: "f"): Spawn("nautilus"),
+        (modifiers: [Super], key: "m"): Maximize,
+        (modifiers: [Super], key: "r"): Resizing(Outwards),
+        (modifiers: [Super, Shift], key: "r"): Resizing(Inwards),
+
+        (modifiers: [Super], key: "b"): Spawn("xdg-open http://"),
+        (modifiers: [Super], key: "f"): Spawn("xdg-open ~"),
         //TODO: ability to select default terminal
         (modifiers: [Super], key: "t"): Spawn("alacritty"),
-        
+
         (modifiers: [Super], key: "a"): Spawn("busctl --user call com.system76.CosmicAppLibrary /com/system76/CosmicAppLibrary com.system76.CosmicAppLibrary Toggle"),
         (modifiers: [Super], key: "w"): Spawn("busctl --user call com.system76.CosmicWorkspaces /com/system76/CosmicWorkspaces com.system76.CosmicWorkspaces Toggle"),
         (modifiers: [Super], key: "slash"): Spawn("busctl --user call com.system76.CosmicLauncher /com/system76/CosmicLauncher com.system76.CosmicLauncher Toggle"),
+        (modifiers: [Super]): Spawn("busctl --user call com.system76.CosmicLauncher /com/system76/CosmicLauncher com.system76.CosmicLauncher Toggle"),
 
         (modifiers: [], key: "XF86AudioRaiseVolume"): Spawn("amixer sset Master 5%+"),
         (modifiers: [], key: "XF86AudioLowerVolume"): Spawn("amixer sset Master 5%-"),
@@ -83,8 +83,6 @@
 
         (modifiers: [], key: "Print"): Spawn("cosmic-screenshot"),
     },
-    workspace_mode: OutputBound,
-    workspace_amount: Dynamic,
-    workspace_layout: Vertical,
     tiling_enabled: true,
+    data_control_enabled: false,
 )

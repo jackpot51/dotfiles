@@ -8,6 +8,7 @@ nixpkgs.stow
 )
 
 FLATPAKS=(
+app.xemu.xemu
 com.dosbox_x.DOSBox-X
 com.github.tchx84.Flatseal
 org.DolphinEmu.dolphin-emu

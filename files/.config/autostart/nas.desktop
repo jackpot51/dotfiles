@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/jeremy/bin/nas
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Mount NAS
+Name=Mount NAS
+Comment[en_US]=Mount local network attached storage
+Comment=Mount local network attached storage

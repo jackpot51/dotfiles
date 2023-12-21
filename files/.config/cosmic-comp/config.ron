@@ -71,8 +71,7 @@
 
         (modifiers: [Super], key: "b"): Spawn("xdg-open http://"),
         (modifiers: [Super], key: "f"): Spawn("xdg-open ~"),
-        //TODO: ability to select default terminal
-        (modifiers: [Super], key: "t"): Spawn("alacritty"),
+        (modifiers: [Super], key: "t"): Spawn("cosmic-term"),
 
         (modifiers: [Super], key: "a"): Spawn("cosmic-app-library"),
         (modifiers: [Super], key: "w"): Spawn("cosmic-workspaces"),

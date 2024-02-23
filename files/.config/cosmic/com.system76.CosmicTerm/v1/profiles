@@ -1,0 +1,9 @@
+{
+    0: (
+        name: "Sudo",
+        command: "sudo -s",
+        syntax_theme_dark: "XTerm Dark",
+        syntax_theme_light: "XTerm Light",
+        tab_title: "",
+    ),
+}

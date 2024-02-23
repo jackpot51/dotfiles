@@ -1,7 +1,8 @@
 (
     key_bindings: {
         (modifiers: [Super, Shift], key: "Escape"): Terminate,
-        (modifiers: [Super], key: "Escape"): Debug,
+        (modifiers: [Super, Ctrl], key: "Escape"): Debug,
+        (modifiers: [Super], key: "Escape"): Spawn("cosmic-greeter"),
         (modifiers: [Super], key: "q"): Close,
 
         (modifiers: [Super], key: "1"): Workspace(1),
@@ -71,6 +72,7 @@
 
         (modifiers: [Super], key: "b"): Spawn("xdg-open http://"),
         (modifiers: [Super], key: "f"): Spawn("xdg-open ~"),
+        //TODO: ability to select default terminal
         (modifiers: [Super], key: "t"): Spawn("cosmic-term"),
 
         (modifiers: [Super], key: "a"): Spawn("cosmic-app-library"),
@@ -78,14 +80,13 @@
         (modifiers: [Super], key: "slash"): Spawn("cosmic-launcher"),
         (modifiers: [Super]): Spawn("cosmic-launcher"),
 
+        (modifiers: [], key: "Print"): Spawn("cosmic-screenshot"),
+
         (modifiers: [], key: "XF86AudioRaiseVolume"): Spawn("amixer sset Master 5%+"),
         (modifiers: [], key: "XF86AudioLowerVolume"): Spawn("amixer sset Master 5%-"),
         (modifiers: [], key: "XF86AudioMute"): Spawn("amixer sset Master toggle"),
         (modifiers: [], key: "XF86MonBrightnessUp"): Spawn("busctl --user call com.system76.CosmicSettingsDaemon /com/system76/CosmicSettingsDaemon com.system76.CosmicSettingsDaemon IncreaseDisplayBrightness"),
         (modifiers: [], key: "XF86MonBrightnessDown"): Spawn("busctl --user call com.system76.CosmicSettingsDaemon /com/system76/CosmicSettingsDaemon com.system76.CosmicSettingsDaemon DecreaseDisplayBrightness"),
-
-        (modifiers: [], key: "Print"): Spawn("cosmic-screenshot"),
-        (modifiers: [Super], key: "Escape"): Spawn("cosmic-greeter"),
     },
     tiling_enabled: true,
     data_control_enabled: false,

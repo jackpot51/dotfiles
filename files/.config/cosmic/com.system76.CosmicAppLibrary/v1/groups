@@ -1,0 +1,46 @@
+[
+    (
+        name: "Games",
+        icon: "folder-symbolic",
+        filter: Categories(
+            categories: [
+                "Game",
+            ],
+            exclude: [],
+            include: [],
+        ),
+    ),
+    (
+        name: "cosmic-office",
+        icon: "folder-symbolic",
+        filter: Categories(
+            categories: [
+                "Office",
+            ],
+            exclude: [],
+            include: [],
+        ),
+    ),
+    (
+        name: "cosmic-system",
+        icon: "folder-symbolic",
+        filter: Categories(
+            categories: [
+                "System",
+            ],
+            exclude: [],
+            include: [],
+        ),
+    ),
+    (
+        name: "cosmic-utilities",
+        icon: "folder-symbolic",
+        filter: Categories(
+            categories: [
+                "Utility",
+            ],
+            exclude: [],
+            include: [],
+        ),
+    ),
+]

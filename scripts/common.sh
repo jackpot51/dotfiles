@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 
-NIXPKGS=(
-nixpkgs.glibcLocales
-nixpkgs.gnome.ghex
-nixpkgs.ripgrep
-nixpkgs.stow
-)
+NIXPKGS=()
 
 FLATPAKS=(
 app.xemu.xemu

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ -z "$1" ]
+then
+    cat ~/.local/state/cosmic/com.system76.CosmicBackground/v1/wallpapers
+    exit 0
+fi
+
+FOLDER="$(realpath "$1")"
+PICTURES=("${FOLDER}"/*)
+PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
+cat > ~/.config/cosmic/com.system76.CosmicBackground/v1/all <<EOF
+(
+    output: "all",
+    source: Path("${PICTURE}"),
+    filter_by_theme: false,
+    rotation_frequency: 300,
+    filter_method: Lanczos,
+    scaling_mode: Zoom,
+    sampling_method: Random,
+)
+EOF

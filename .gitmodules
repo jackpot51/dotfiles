@@ -32,3 +32,7 @@
 	path = mako
 	url = https://github.com/emersion/mako.git
 	branch = master
+[submodule "files/.vim/pack/vendor/start/vim-wayland-clipboard"]
+	path = files/.vim/pack/vendor/start/vim-wayland-clipboard
+	url = https://github.com/jasonccox/vim-wayland-clipboard.git
+	branch = master

@@ -45,24 +45,13 @@ export DEBEMAIL="jeremy@system76.com"
 export DEBFULLNAME="Jeremy Soller"
 export QUILT_PATCHES="debian/patches"
 
-# Set QT theme, requires qt5-style-plugins
-export QT_QPA_PLATFORMTHEME=gtk2
-
 # Start gnome-keyring-daemon if installed
 if [ -x /usr/bin/gnome-keyring-daemon ]
 then
     export $(/usr/bin/gnome-keyring-daemon --start)
 fi
 
-# Add nix to path if installed
-if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
-	. "$HOME/.nix-profile/etc/profile.d/nix.sh"
-fi
-
-# Add nix locale archive
-if [ -e "$HOME/.nix-profile/lib/locale/locale-archive" ]; then
-	export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
-fi
-
 # Mark as loaded
 export DOTFILES_PROFILE_LOADED=1
+
+export QSYS_ROOTDIR="/home/jeremy/intelFPGA_lite/17.0/quartus/sopc_builder/bin"

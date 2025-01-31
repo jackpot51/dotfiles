@@ -1,7 +1,7 @@
 [user]
 	email = jackpot51@gmail.com
 	name = Jeremy Soller
-	signingkey = EF25594D4777F2365A526ED7D02FD439211AF56F
+	signingkey = 6965D85741D5160B616F7C3B670FDFB5428E05CA
 [push]
 	default = simple
 [credential]

@@ -9,7 +9,7 @@
 #umask 022
 
 # Only run if not loaded
-if [ "${DOTFILES_PROFILE_LOADED}" == "1" ]
+if [ "${DOTFILES_PROFILE_LOADED}" = "1" ]
 then
 	return
 fi
@@ -44,12 +44,6 @@ export EDITOR=vim
 export DEBEMAIL="jeremy@system76.com"
 export DEBFULLNAME="Jeremy Soller"
 export QUILT_PATCHES="debian/patches"
-
-# Start gnome-keyring-daemon if installed
-if [ -x /usr/bin/gnome-keyring-daemon ]
-then
-    export $(/usr/bin/gnome-keyring-daemon --start)
-fi
 
 # Mark as loaded
 export DOTFILES_PROFILE_LOADED=1

@@ -50,7 +50,7 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec --no-startup-id i3-sensible-terminal
+bindsym $mod+t exec --no-startup-id cosmic-term
 
 # start firefox
 bindsym $mod+b exec firefox

@@ -9,8 +9,13 @@ then
 fi
 
 FOLDER="$(realpath "$1")"
-PICTURES=("${FOLDER}"/*)
-PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
+if [ -d "${FOLDER}" ]
+then
+    PICTURES=("${FOLDER}"/*)
+    PICTURE="$(shuf -n1 -e "${PICTURES[@]}")"
+else
+    PICTURE="${FOLDER}"
+fi
 cat > ~/.config/cosmic/com.system76.CosmicBackground/v1/all <<EOF
 (
     output: "all",

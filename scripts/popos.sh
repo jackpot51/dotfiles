@@ -76,7 +76,6 @@ libxkbcommon-dev
 msr-tools
 ostree
 ppa-purge
-python2
 python3-pip
 rust-all
 sassc
@@ -155,7 +154,6 @@ grub-pc-bin
 isolinux
 mtools
 ovmf
-qemu-efi
 qemu-kvm
 qemu-user-static
 squashfs-tools
@@ -195,7 +193,6 @@ libudev-dev
 mtools
 parted
 python-is-python3
-python3-distutils
 uuid-dev
 zlib1g-dev
 )
